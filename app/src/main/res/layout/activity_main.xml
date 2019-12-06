@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/container"
+  android:isScrollContainer="true"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingTop="?attr/actionBarSize">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+      android:id="@+id/activity_main"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingBottom="1dp"
+      android:paddingLeft="4dp"
+      android:paddingRight="4dp"
+      android:paddingTop="1dp"
+      tools:context="com.example.mobidogi.MainActivity">
+
+      <Button
+        android:contentDescription="@string/title_mitenkoiraoppii"
+        android:id="@+id/simpleImageViewMitenKoiraOppii"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:drawablePadding="@null"
+        android:background="@drawable/mitenkoiraoppiipaketti_kuvsa"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/title_mitenkoiraoppii"
+        android:textSize="@dimen/pictureTitles"
+        android:textColor="@color/colorTitles2"
+        app:fontFamily="@font/cinzel_bold"/>
+
+      <Button
+        android:contentDescription="@string/title_lenkkeily"
+        android:id="@+id/simpleImageViewLenkkeily"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:drawablePadding="@null"
+        android:background="@drawable/lenkkeily"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/title_lenkkeily"
+        android:textSize="@dimen/pictureTitles"
+        android:textColor="@color/colorTitles2"
+        app:fontFamily="@font/cinzel_bold"/>
+
+      <Button
+        android:contentDescription="@string/title_luoksetulo"
+        android:id="@+id/simpleImageViewLuoksetulo"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:drawablePadding="@null"
+        android:background="@drawable/luoksetulo"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/title_luoksetulo"
+        android:textSize="@dimen/pictureTitles"
+        android:textColor="@color/colorTitles2"
+        app:fontFamily="@font/cinzel_bold"/>
+
+      <Button
+        android:contentDescription="@string/title_hoitotoimenpiteet"
+        android:id="@+id/simpleImageViewHoitotoimenpiteet"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:drawablePadding="@null"
+        android:background="@drawable/hoitotoimenpiteet"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/title_hoitotoimenpiteet"
+        android:textSize="@dimen/pictureTitles"
+        android:textColor="@color/colorTitles2"
+        app:fontFamily="@font/cinzel_bold"/>
+
+      <Button
+        android:contentDescription="@string/title_hairitseva_kaytos"
+        android:id="@+id/simpleImageViewHairitsevaKaytos"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:drawablePadding="@null"
+        android:background="@drawable/hairitseva_kaytos"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/title_hairitseva_kaytos"
+        android:textSize="@dimen/pictureTitles"
+        android:textColor="@color/colorTitles2"
+        app:fontFamily="@font/cinzel_bold"/>
+
+      <Button
+        android:contentDescription="@string/title_yksinolo"
+        android:id="@+id/simpleImageViewYksinolo"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:drawablePadding="@null"
+        android:background="@drawable/yksinolo"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/title_yksinolo"
+        android:textSize="@dimen/pictureTitles"
+        android:textColor="@color/colorTitles2"
+        app:fontFamily="@font/cinzel_bold"/>
+
+    </LinearLayout>
+  </ScrollView>
+
+  <android.support.design.widget.BottomNavigationView
+    android:id="@+id/nav_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="0dp"
+    android:layout_marginEnd="0dp"
+    android:background="?android:attr/windowBackground"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:menu="@menu/bottom_nav_menu"
+    app:itemIconTint="@color/colorTitles1"
+    app:itemTextColor="@color/colorTitles1"
+    app:itemBackground="@color/colorTitles2"/>
+</android.support.constraint.ConstraintLayout>

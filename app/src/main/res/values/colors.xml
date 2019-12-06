@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#3F51B5</color>
+  <color name="colorPrimaryDark">#303F9F</color>
+  <color name="colorAccent">#FF4081</color>
+  <color name="colorWhite">#ffffff</color>
+  <color name="colorBlack">#000000</color>
+  <color name="colorTitles1">#000000</color>
+  <color name="colorTitles2">#FA2512</color>
+  <color name="videonKuvausBackground">#FFFFFF</color>
+  <color name="videonKuvausText">#000000</color>
+  <color name="trainingCalendar1">#FAAF00</color>
+  <color name="calendarWeeks">#1491AF</color>
+  <color name="calendarDays">#1500FF</color>
+</resources>

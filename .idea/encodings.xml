@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../FuckingTest/gradle.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../FuckingTest/local.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../LoggingIn/gradle.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../LoggingIn/local.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gradle.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/local.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../MobiDogi2/gradle.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../MobiDogi2/local.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../MyApplication/gradle.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../MyApplication/local.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../MyApplication2/gradle.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../MyApplication2/local.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../MyApplication3/gradle.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../MyApplication3/local.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../MyApplication4/gradle.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../MyApplication4/local.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../NavigationBarTest/gradle.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../NavigationBarTest/local.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Scrolling/gradle.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Scrolling/local.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../ScrollingActivity/gradle.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../ScrollingActivity/local.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../SendVideoViaEmail/gradle.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../SendVideoViaEmail/local.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../ShortcutTesting/gradle.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../ShortcutTesting/local.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../ThisIsExperiment/gradle.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../ThisIsExperiment/local.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../TutkimusOmaaAppiaVarten/gradle.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../TutkimusOmaaAppiaVarten/local.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../YhteysKouluttajaan/gradle.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../YhteysKouluttajaan/gradle.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../YhteysKouluttajaan/gradle.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../YhteysKouluttajaan/local.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../YhteysKouluttajaan/local.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../YhteysKouluttajaan/local.properties" charset="UTF-8" />
+  </component>
+</project>

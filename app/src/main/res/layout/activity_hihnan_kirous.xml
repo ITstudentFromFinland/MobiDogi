@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/container"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingTop="?attr/actionBarSize">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="1dp"
+    android:id="@+id/activity_third"
+    tools:context="com.example.mobidogi.HihnanKirousActivity" >
+
+    <Button
+      android:contentDescription="@string/title_hihnan_kirous"
+      android:id="@+id/simpleImageViewHihnanKirous"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:drawablePadding="@null"
+      android:background="@drawable/hihnan_kirous"
+      android:paddingTop="8dp"
+      android:layout_marginBottom="3dp"
+      android:text="@string/title_hihnan_kirous"
+      android:textSize="@dimen/pictureTitles"
+      android:textColor="@color/colorTitles2"
+      app:fontFamily="@font/cinzel_bold"/>
+  </RelativeLayout>
+
+  <android.support.design.widget.BottomNavigationView
+    android:id="@+id/nav_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="0dp"
+    android:layout_marginEnd="0dp"
+    android:background="?android:attr/windowBackground"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:menu="@menu/bottom_nav_menu"
+    app:itemIconTint="@color/colorTitles1"
+    app:itemTextColor="@color/colorTitles1"
+    app:itemBackground="@color/colorTitles2"/>
+</android.support.constraint.ConstraintLayout>

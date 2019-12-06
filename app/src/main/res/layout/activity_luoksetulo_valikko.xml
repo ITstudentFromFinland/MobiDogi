@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/container"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingTop="?attr/actionBarSize">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+      android:id="@+id/activity_third"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingBottom="1dp"
+      android:paddingLeft="4dp"
+      android:paddingRight="4dp"
+      android:paddingTop="1dp"
+      tools:context="com.example.mobidogi.LuoksetuloValikkoActivity">
+
+      <Button
+        android:contentDescription="@string/title_luento_luoksetulo"
+        android:id="@+id/simpleImageViewLuoksetuloLuento"
+        android:layout_width="fill_parent"
+        android:layout_height="210dp"
+        android:drawablePadding="@null"
+        android:background="@drawable/luoksetulo"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/title_luento_luoksetulo"
+        android:textSize="@dimen/pictureTitles"
+        android:textColor="@color/colorTitles2"
+        app:fontFamily="@font/cinzel_bold"/>
+
+      <Button
+        android:contentDescription="@string/title_luoksetulonkoulutus"
+        android:id="@+id/simpleImageViewLuoksetulonKoulutus"
+        android:layout_width="fill_parent"
+        android:layout_height="260dp"
+        android:drawablePadding="@null"
+        android:background="@drawable/luoksetulon_koulutus"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/title_luoksetulonkoulutus"
+        android:textSize="@dimen/pictureTitles"
+        android:textColor="@color/colorTitles2"
+        app:fontFamily="@font/cinzel_bold"/>
+
+      <Button
+        android:contentDescription="@string/title_lahella_pysyminen"
+        android:id="@+id/SimpleImageViewLahellaPysyminen"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:drawablePadding="@null"
+        android:background="@drawable/lahellapysyminen_ilmaiseen"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/title_lahella_pysyminen"
+        android:textSize="@dimen/pictureTitles"
+        android:textColor="@color/colorTitles2"
+        app:fontFamily="@font/cinzel_bold"/>
+
+    </LinearLayout>
+  </ScrollView>
+
+  <android.support.design.widget.BottomNavigationView
+    android:id="@+id/nav_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="0dp"
+    android:layout_marginEnd="0dp"
+    android:background="?android:attr/windowBackground"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:menu="@menu/bottom_nav_menu"
+    app:itemIconTint="@color/colorTitles1"
+    app:itemTextColor="@color/colorTitles1"
+    app:itemBackground="@color/colorTitles2"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".YhteysKouluttajaanActivity">
+
+  <TextView
+    android:id="@+id/textView_kuvaaVideo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/kuvaa_video"
+    android:textColor="@color/colorTitles1"
+    android:textSize="@dimen/text_kuvaa_video"
+    android:fontFamily="@font/cinzel_bold"
+    android:layout_marginStart="70dp"
+    android:layout_marginTop="160dp"
+    android:layout_centerHorizontal="true"/>
+
+  <Button
+    android:id="@+id/kuvaa_video"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/textView_kuvaaVideo"
+    android:layout_marginTop="100dp"
+    android:layout_marginStart="130dp"
+    android:text="@string/aloita_kuvaus"
+    android:textSize="@dimen/text_kuvaa_video"
+    android:fontFamily="@font/cinzel_bold"
+    android:textColor="@color/colorTitles2"
+    android:onClick="captureVideo"/>
+
+  <Button
+    android:id="@+id/tarkista_video"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/kuvaa_video"
+    android:layout_marginTop="40dp"
+    android:layout_marginStart="80dp"
+    android:text="@string/tarkista_kuvaus"
+    android:textSize="@dimen/text_kuvaa_video"
+    android:fontFamily="@font/cinzel_bold"
+    android:textColor="@color/colorTitles2"
+    android:onClick="playVideo"/>
+
+  <Button
+    android:id="@+id/laheta_video"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tarkista_video"
+    android:layout_marginTop="40dp"
+    android:layout_marginStart="130dp"
+    android:text="@string/laheta_video"
+    android:textSize="@dimen/text_kuvaa_video"
+    android:fontFamily="@font/cinzel_bold"
+    android:textColor="@color/colorTitles2"
+    android:onClick="shareVideo"/>
+
+</RelativeLayout>
