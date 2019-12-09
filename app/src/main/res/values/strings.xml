@@ -53,6 +53,8 @@
   <string name="title_luento_arsyttavakaytos">Luento: ärsyttävä käytös</string>
   <string name="title_aktivointivinkkeja">Aktivointivinkkejä</string>
   <string name="title_poiskouluttaminen">Pois kouluttaminen</string>
+  <string name="title_yksinolonkoulutus">Yksinolon koulutus</string>
+  <string name="title_luento_yksinolo">Luento: Yksinolo</string>
 
   <string name="kuvaa_video">Kuvaa 2 min video, jossa kerrot lyhyesti ja jossa videoit koirasi käytöstä, johon haluat neuvoa.</string>
   <string name="aloita_kuvaus">Aloita</string>
