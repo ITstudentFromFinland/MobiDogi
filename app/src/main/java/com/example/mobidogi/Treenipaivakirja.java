@@ -60,7 +60,6 @@ public class Treenipaivakirja extends Activity {
 
       mCalendarView.setMinimumDate(min);
       mCalendarView.setMaximumDate(max);
-      mCalendarView.setDate(myEventDay.getCalendar());
       mEventDays.add(myEventDay);
       mCalendarView.setEvents(mEventDays);
     }
