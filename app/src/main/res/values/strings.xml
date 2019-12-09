@@ -59,20 +59,31 @@
   <string name="tarkista_kuvaus">Tarkista video</string>
   <string name="laheta_video">Lähetä</string>
 
-  <string name="tue">Ti</string>
-  <string name="wed">Ke</string>
-  <string name="thu">To</string>
-  <string name="fri">Pe</string>
-  <string name="sat">La</string>
-  <string name="sun">Su</string>
-  <string name="current_date">December, 2019</string>
-  <string name="last_date">31</string>
-  <string name="lisaa_merkinta">Uusi treenimerkintä</string>
-  <string name="add_event">Lisää treenimerkintä</string>
+  <string name="material_calendar_monday">Ma</string>
+  <string name="material_calendar_tuesday">Ti</string>
+  <string name="material_calendar_wednesday">Ke</string>
+  <string name="material_calendar_thursday">To</string>
+  <string name="material_calendar_friday">Pe</string>
+  <string name="material_calendar_saturday">La</string>
+  <string name="material_calendar_sunday">Su</string>
 
-  <string name="show_event">Naytä treenimerkinnät</string>
-  <string name="prev">Prev</string>
-  <string name="next">Next</string>
-  <string name="hint_time">Aika</string>
-  <string name="hint_title">Treeni</string>
+  <array name="material_calendar_months_array">
+    <item>Tammikuu</item>
+    <item>Helmikuu</item>
+    <item>Maaliskuu</item>
+    <item>Huhtikuu</item>
+    <item>Toukokuu</item>
+    <item>Kesäkuu</item>
+    <item>Heinäkuu</item>
+    <item>Elokuu</item>
+    <item>Syyskuu</item>
+    <item>Lokakuu</item>
+    <item>Marraskuu</item>
+    <item>Joulukuu</item>
+  </array>
+
+  <string name="material_calendar_today_button">Tänään</string>
+  <string name="material_calendar_positive_button">OK</string>
+  <string name="material_calendar_negative_button">Peruuta</string>
+
 </resources>
