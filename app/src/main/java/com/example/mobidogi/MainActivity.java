@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
     Button Luoksetulo= findViewById(R.id.simpleImageViewLuoksetulo);
     Button HairitsevaKaytos= findViewById(R.id.simpleImageViewHairitsevaKaytos);
     Button Hoitotoimenpiteet= findViewById(R.id.simpleImageViewHoitotoimenpiteet);
+    Button Yksinolo = findViewById(R.id.simpleImageViewYksinolo);
 
     MitenKoiraOppii.setOnClickListener(new View.OnClickListener() {
       @Override
@@ -91,5 +92,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(int4);
       }
     });
+
+    Yksinolo.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        Intent int5 = new Intent(MainActivity.this, YksinoloValikkoActivity.class);
+        startActivity(int5);
+    }
+  });
   }
 }
