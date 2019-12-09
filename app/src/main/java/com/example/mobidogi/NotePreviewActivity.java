@@ -22,7 +22,7 @@ public class NotePreviewActivity extends AppCompatActivity {
     TextView note = (TextView) findViewById(R.id.note);
 
     if (intent != null) {
-      Object event = intent.getParcelableExtra(MainActivity.EVENT);
+      Object event = intent.getParcelableExtra(Treenipaivakirja.EVENT);
 
       if(event instanceof MyEventDay){
         MyEventDay myEventDay = (MyEventDay)event;

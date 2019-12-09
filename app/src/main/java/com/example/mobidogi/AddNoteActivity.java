@@ -29,7 +29,7 @@ public class AddNoteActivity extends AppCompatActivity {
         MyEventDay myEventDay = new MyEventDay(datePicker.getSelectedDate(),
 
           R.drawable.ic_message_black_24dp, noteEditText.getText().toString());
-        returnIntent.putExtra(MainActivity.RESULT, myEventDay);
+        returnIntent.putExtra(Treenipaivakirja.RESULT, myEventDay);
         setResult(Activity.RESULT_OK, returnIntent);
         finish();
       }
