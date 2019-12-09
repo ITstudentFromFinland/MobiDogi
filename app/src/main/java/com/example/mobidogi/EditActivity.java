@@ -45,6 +45,7 @@ public class EditActivity extends AppCompatActivity implements LoaderManager.Loa
       startActivity(getPackageManager().getLaunchIntentForPackage(getPackageName())
         .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK));
       return;
+    }
 
     setContentView(R.layout.activity_edit);
     setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
