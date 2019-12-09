@@ -19,7 +19,4 @@
   <dimen name="dot_size">4dp</dimen>
   <dimen name="time_width">96dp</dimen>
   <dimen name="padding_text">4dp</dimen>
-
-  <dimen name="calendar_width">392dp</dimen>
-  <dimen name="margin_form">92dp</dimen>
 </resources>
