@@ -1149,7 +1149,6 @@ id btnNext
 id btnPrev
 id buttonPanel
 id cancel_action
-id card_view
 id center
 id center_horizontal
 id center_vertical
@@ -1175,10 +1174,7 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
-id divider
 id edit_query
-id edtEventTitle
-id edtTime
 id end
 id end_padder
 id enterAlways
@@ -1354,11 +1350,6 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
-id txtCreatedAt
-id txtDate
-id txtEvent
-id txtTime
-id txtUpdatedAt
 id uniform
 id unlabeled
 id up
@@ -1460,12 +1451,10 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
-layout dialog_event
 layout fragment_dashboard
 layout fragment_home
 layout fragment_notifications
 layout fragment_treenipaivakirja
-layout item_date
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -1548,7 +1537,6 @@ string attemptsleft
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
-string created
 string current_date
 string ehdollistaminen_ohje
 string fab_transformation_scrim_behavior
@@ -1573,7 +1561,6 @@ string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string next
 string omistajastapois_ohje
-string paivays
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -1608,7 +1595,7 @@ string title_hoitotoimenpiteet
 string title_hoitotoimenpiteet_ohje
 string title_hoitotoimenpiteet_valikko
 string title_home
-string title_kaupunkikävely
+string title_kaupunkikavely
 string title_kontakti
 string title_lahella_pysyminen
 string title_lenkkeily
@@ -1628,7 +1615,6 @@ string title_valineet
 string title_yhteyskouluttajaan
 string title_yksinolo
 string tue
-string updated
 string wed
 string welcome
 style AlertDialog_AppCompat

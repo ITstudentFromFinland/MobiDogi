@@ -106,7 +106,7 @@
         app:fontFamily="@font/cinzel_bold"/>
 
       <Button
-        android:contentDescription="@string/title_kaupunkikävely"
+        android:contentDescription="@string/title_kaupunkikavely"
         android:id="@+id/simpleImageViewKaupunkikavely"
         android:layout_width="fill_parent"
         android:layout_height="200dp"
@@ -114,7 +114,7 @@
         android:background="@drawable/kaupunkikavely"
         android:paddingTop="8dp"
         android:layout_marginBottom="3dp"
-        android:text="@string/title_kaupunkikävely"
+        android:text="@string/title_kaupunkikavely"
         android:textSize="@dimen/pictureTitles"
         android:textColor="@color/colorTitles2"
         app:fontFamily="@font/cinzel_bold"/>

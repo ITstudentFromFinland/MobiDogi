@@ -14,7 +14,7 @@
   <string name="title_valineet">Välineet</string>
   <string name="title_hairitseva_kaytos">Häiritsevä käytös</string>
   <string name="title_hihnassa_kauniisti_kavely">Hihnassa kauniisti kävely</string>
-  <string name="title_kaupunkikävely">Kaupunkikävely</string>
+  <string name="title_kaupunkikavely">Kaupunkikävely</string>
   <string name="title_uloslahto_rauhallisesti">Uloslähtö rauhallisesti</string>
   <string name="title_motivointi">Motivointi</string>
   <string name="title_ohittaminen">Ohittaminen</string>
@@ -50,7 +50,7 @@
   <string name="title_alustallemeno">Alustalle meno</string>
   <string name="title_yhteyskouluttajaan">Yhteys kouluttajaan</string>
   <string name="title_hoitotoimenpiteet_ohje">Ohje hoitotoimenpiteiden käsittelyyn</string>
-  <string name="title_luento_arsyttavakaytos">Luento: Ärsyttävä käytös</string>
+  <string name="title_luento_arsyttavakaytos">Luento: ärsyttävä käytös</string>
   <string name="title_aktivointivinkkeja">Aktivointivinkkejä</string>
   <string name="title_poiskouluttaminen">Pois kouluttaminen</string>
 
@@ -70,12 +70,9 @@
   <string name="lisaa_merkinta">Uusi treenimerkintä</string>
   <string name="add_event">Lisää treenimerkintä</string>
 
-  <string name="show_event">Näytä treenimerkinnät</string>
+  <string name="show_event">Naytä treenimerkinnät</string>
   <string name="prev">Prev</string>
   <string name="next">Next</string>
   <string name="hint_time">Aika</string>
   <string name="hint_title">Treeni</string>
-  <string name="paivays">Päivä, pp-kk-vvvv</string>
-  <string name="created">Luotu</string>
-  <string name="updated">Päivitetty</string>
 </resources>
