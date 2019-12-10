@@ -2,6 +2,7 @@ package com.example.mobidogi;
 
 
 import java.util.Calendar;
+
 import android.content.ContentUris;
 import android.net.Uri;
 import android.os.Bundle;
@@ -29,7 +30,7 @@ public class Treenipaivakirja extends Activity {
 
         Calendar beginTime = Calendar.getInstance();
         Calendar endTime = Calendar.getInstance();
-        Intent intent = new Intent(Intent.ACTION_INSERT);
+        Intent intent = new Intent(Intent.ACTION_INSERT, Uri.parse("content://events"));
         intent.setData(Events.CONTENT_URI);
         intent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, beginTime.getTimeInMillis());
         intent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime.getTimeInMillis());
