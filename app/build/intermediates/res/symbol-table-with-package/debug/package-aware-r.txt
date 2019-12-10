@@ -1146,6 +1146,7 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
+id activity_custom_calendar
 id activity_main
 id activity_third
 id activity_valikko_yksinolo
@@ -1159,6 +1160,8 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btn_add_event
+id btn_show_event
 id buttonPanel
 id cancel_action
 id center
@@ -1284,6 +1287,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id simpleCalendarView
 id simpleImageViewAktivointiVinkkeja
 id simpleImageViewArsyttavaKaytosLuento
 id simpleImageViewEhdollistaminen
@@ -1542,6 +1546,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_sign_in
 string action_sign_in_short
+string add_event
 string aloita_kuvaus
 string app_name
 string appbar_scrolling_view_behavior
@@ -1575,6 +1580,7 @@ string prompt_email
 string prompt_password
 string rauhoittuminen_ohje
 string search_menu_title
+string show_event
 string status_bar_notification_info_overflow
 string tarkista_kuvaus
 string title_activity_ehdollistaminen_ohje_pdf

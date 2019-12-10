@@ -60,4 +60,7 @@
   <string name="aloita_kuvaus">Aloita</string>
   <string name="tarkista_kuvaus">Tarkista video</string>
   <string name="laheta_video">Lähetä</string>
+
+  <string name="add_event">Lisää treenimerkintä</string>
+  <string name="show_event">Näytä treenimerkinnät</string>
 </resources>
