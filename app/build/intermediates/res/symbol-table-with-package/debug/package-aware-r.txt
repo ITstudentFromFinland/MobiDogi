@@ -1160,8 +1160,7 @@ id barrier
 id beginning
 id blocking
 id bottom
-id btn_add_event
-id btn_show_event
+id btn_add_training_event
 id buttonPanel
 id cancel_action
 id center
@@ -1189,6 +1188,7 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
+id editTextTrainingEvent
 id edit_query
 id end
 id end_padder
@@ -1287,7 +1287,6 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
-id simpleCalendarView
 id simpleImageViewAktivointiVinkkeja
 id simpleImageViewArsyttavaKaytosLuento
 id simpleImageViewEhdollistaminen
@@ -1345,6 +1344,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
 id textView_kuvaaVideo
 id text_dashboard
 id text_home
@@ -1422,6 +1422,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_event
 layout activity_aktivointi_vinkkeja
 layout activity_ehdollistaminen
 layout activity_hairitseva_kaytos_valikko
@@ -1547,6 +1548,7 @@ string abc_toolbar_collapse_description
 string action_sign_in
 string action_sign_in_short
 string add_event
+string add_training_event
 string aloita_kuvaus
 string app_name
 string appbar_scrolling_view_behavior
@@ -1555,6 +1557,7 @@ string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
 string ehdollistaminen_ohje
+string enter_training_event
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
@@ -1582,6 +1585,7 @@ string rauhoittuminen_ohje
 string search_menu_title
 string show_event
 string status_bar_notification_info_overflow
+string submit_training_event
 string tarkista_kuvaus
 string title_activity_ehdollistaminen_ohje_pdf
 string title_activity_hihnan_kirous
@@ -1622,6 +1626,7 @@ string title_valineet
 string title_yhteyskouluttajaan
 string title_yksinolo
 string title_yksinolonkoulutus
+string training_events
 string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

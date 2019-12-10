@@ -36,6 +36,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.mobidogi.AddEventActivity" />
         <activity android:name="com.example.mobidogi.YksinolonkoulutusPDF" />
         <activity android:name="com.example.mobidogi.YksinoloLuentoPDF" />
         <activity android:name="com.example.mobidogi.YksinoloValikkoActivity" />

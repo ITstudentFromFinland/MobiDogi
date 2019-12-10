@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
-  android:id="@+id/activity_custom_calendar"
   android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:orientation="vertical"
-  tools:context=".Treenipaivakirja">
+  android:layout_height="match_parent">
+  <LinearLayout
+    android:id="@+id/activity_custom_calendar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Treenipaivakirja">
 
-  <CalendarView
-    android:id="@+id/simpleCalendarView"
-    android:layout_width="fill_parent"
-    android:layout_height="407dp"
-    android:firstDayOfWeek="2"
-    android:maxDate="31/12/2060"
-    android:minDate="01/12/2019" />
+    <TextView
+      android:id="@+id/textView"
+      android:layout_width="fill_parent"
+      android:layout_height="493dp"
+      android:layout_gravity="center_horizontal"
+      android:fontFamily="@font/cinzel_bold"
+      android:text="@string/training_events"
+      android:textAlignment="center"
+      android:textColor="@color/colorBlack" />
 
-  <Button
-    android:layout_width="200dp"
-    android:layout_height="60dp"
-    android:layout_marginStart="80dp"
-    android:text="@string/add_event"
-    android:id="@+id/btn_add_event"/>
-
-  <Button
-    android:layout_width="200dp"
-    android:layout_height="60dp"
-    android:text="@string/show_event"
-    android:layout_marginStart="80dp"
-    android:id="@+id/btn_show_event"/>
-
-</LinearLayout>
+    <Button
+      android:id="@+id/btn_add_training_event"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:layout_gravity="center_horizontal"
+      android:onClick="addEvent"
+      android:text="@string/add_training_event" />
+  </LinearLayout>
+</ScrollView>
