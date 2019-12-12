@@ -54,15 +54,15 @@
     android:onClick="loadEvents"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.453"
+    app:layout_constraintHorizontal_bias="0.50"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.369" />
+    app:layout_constraintVertical_bias="0.900" />
 
   <TextView
     android:id="@+id/list"
-    android:layout_width="307dp"
-    android:layout_height="166dp"
+    android:layout_width="360dp"
+    android:layout_height="116dp"
     android:layout_marginBottom="8dp"
     android:layout_marginEnd="8dp"
     android:layout_marginStart="8dp"
@@ -71,6 +71,7 @@
     android:text="@string/list"
     android:textColor="#ff0000"
     android:textSize="15sp"
+    android:scrollbars="vertical"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.508"
@@ -90,39 +91,9 @@
     android:text="@string/Add"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.028"
+    app:layout_constraintHorizontal_bias="0.453"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.912" />
+    app:layout_constraintVertical_bias="0.369" />
 
-  <Button
-    android:id="@+id/btnfind"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginEnd="8dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginTop="416dp"
-    android:onClick="findEvents"
-    android:text="@string/Find"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.342"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
-
-  <Button
-    android:id="@+id/btnupdate"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="8dp"
-    android:layout_marginEnd="8dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginTop="8dp"
-    android:onClick="updateEvent"
-    android:text="@string/Update"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="1.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.912" />
 </android.support.constraint.ConstraintLayout>

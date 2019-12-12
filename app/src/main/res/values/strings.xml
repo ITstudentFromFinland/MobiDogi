@@ -69,11 +69,11 @@
   <string name="enter_training_event">Kirjoita treenimerkintä</string>
   <string name="submit_training_event">Tallenna treenimerkintä</string>
 
-  <string name="Load">Lataa treenimerkintöjä</string>
+  <string name="Load">Lataa treenimerkinnät</string>
   <string name="Add">Lisää treenimerkintä</string>
-  <string name="Find">Etsi treenimerkintöjä</string>
-  <string name="Update">Päivitä treenimerkinnät</string>
-  <string name="Date">Päiväys</string>
+  <string name="Date">Päiväys muodossa ppkkvvvv</string>
   <string name="Description">Treenin kuvaus ja miten meni</string>
-  <string name="list">Treenimerkinnät tähän</string>
+  <string name="list">Treenimerkinnät vanhoja myöten ilmestyvät tähän ladatessasi uuden merkinnän.
+    Kirjoita ensin treenimerkintä (päiväys, kuvaus ja miten meni), minkä jälkeen voit lisätä merkinnän ja ladata
+    sen vanhojen lisäksi.</string>
 </resources>
