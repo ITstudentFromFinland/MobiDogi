@@ -25,10 +25,13 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL(CREATE_TRAINING_TABLE);
   }
   @Override
-  public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {}
+  public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+    db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
+    onCreate(db);
+  }
   public String loadHandler() {
     String result = "";
-    String query = "Select:FROM" + TABLE_NAME;
+    String query = "Select*FROM " + TABLE_NAME;
     SQLiteDatabase db = this.getWritableDatabase();
     Cursor cursor = db.rawQuery(query, null);
     while (cursor.moveToNext()) {
@@ -49,7 +52,7 @@ public class DBHelper extends SQLiteOpenHelper {
     db.close();
   }
   public DisplayEvent findHandler(String eventdescription) {
-    String query = "Select * FROM " + TABLE_NAME + "WHERE" + COLUMN_DESCRIPTION + " = " + "'" + eventdescription + "'";
+    String query = "Select * FROM " + TABLE_NAME + " WHERE " + COLUMN_DESCRIPTION + " = " + eventdescription + "'";
     SQLiteDatabase db = this.getWritableDatabase();
     Cursor cursor = db.rawQuery(query, null);
     DisplayEvent event = new DisplayEvent();
@@ -64,9 +67,10 @@ public class DBHelper extends SQLiteOpenHelper {
     db.close();
     return event;
     }
+
   public boolean deleteHandler(int Date) {
     boolean result = false;
-    String query = "Select*FROM" + TABLE_NAME + "WHERE" + COLUMN_DATE + "= '" + Date + "'";
+    String query = "Select*FROM " + TABLE_NAME + " WHERE " + COLUMN_DATE + " = '" + Date + "'";
     SQLiteDatabase db = this.getWritableDatabase();
     Cursor cursor = db.rawQuery(query, null);
     DisplayEvent event = new DisplayEvent();

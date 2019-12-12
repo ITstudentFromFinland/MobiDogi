@@ -1197,6 +1197,8 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id eventDate
+id eventDescription
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1227,6 +1229,7 @@ id largeLabel
 id left
 id line1
 id line3
+id list
 id listMode
 id list_item
 id masked
@@ -1509,6 +1512,8 @@ mipmap ic_launcher_round
 mipmap time_icon
 navigation mobile_navigation
 string Add
+string Date
+string Description
 string Find
 string Load
 string Update
@@ -1573,6 +1578,7 @@ string kohdentaminen_ohje
 string kuvaa_video
 string lahellapysyminen_ohje
 string laheta_video
+string list
 string login_failed
 string login_logo
 string luento_oppiminen
