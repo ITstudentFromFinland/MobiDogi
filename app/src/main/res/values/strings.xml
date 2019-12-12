@@ -68,4 +68,9 @@
   <string name="add_training_event">Lisää treenimerkintä</string>
   <string name="enter_training_event">Kirjoita treenimerkintä</string>
   <string name="submit_training_event">Tallenna treenimerkintä</string>
+
+  <string name="Load">Lataa treenimerkintöjä</string>
+  <string name="Add">Lisää treenimerkintä</string>
+  <string name="Find">Etsi treenimerkintöjä</string>
+  <string name="Update">Päivitä treenimerkinnät</string>
 </resources>
