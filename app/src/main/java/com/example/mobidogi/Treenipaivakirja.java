@@ -6,6 +6,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import static com.example.mobidogi.DBHelper.COLUMN_DATE;
+import static com.example.mobidogi.DBHelper.COLUMN_DESCRIPTION;
+
 
 public class Treenipaivakirja extends AppCompatActivity {
 
@@ -17,10 +20,14 @@ public class Treenipaivakirja extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.treenipaivakirja_activity);
+
+    lst = (TextView)findViewById(R.id.list);
+    eventdate = (EditText)findViewById(R.id.eventDate);
+    eventdescription = (EditText)findViewById(R.id.eventDescription);
   }
 
   public void loadEvents(View view) {
-    DBHelper dbHandler = new DBHelper(this, null, null, 1);
+    DBHelper dbHandler = new DBHelper(this, COLUMN_DATE, null, 1);
     lst.setText(dbHandler.loadHandler());
     eventdate.setText("");
     eventdescription.setText("");

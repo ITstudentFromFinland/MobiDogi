@@ -13,6 +13,7 @@ public class DBHelper extends SQLiteOpenHelper {
   public static final String TABLE_NAME = "Treenit";
   public static final String COLUMN_DATE = "TreeniPaivays";
   public static final String COLUMN_DESCRIPTION = "TreeniKuvaus";
+
   //initialize the database
   public DBHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
     super(context, DATABASE_NAME, factory, DATABASE_VERSION);
