@@ -73,4 +73,7 @@
   <string name="Add">Lisää treenimerkintä</string>
   <string name="Find">Etsi treenimerkintöjä</string>
   <string name="Update">Päivitä treenimerkinnät</string>
+  <string name="Date">Päiväys</string>
+  <string name="Description">Treenin kuvaus ja miten meni</string>
+  <string name="list">Treenimerkinnät tähän</string>
 </resources>
