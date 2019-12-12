@@ -1,32 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
-  android:layout_height="match_parent">
-  <LinearLayout
-    android:id="@+id/activity_custom_calendar"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    tools:context=".Treenipaivakirja">
+  android:layout_height="wrap_content"
+  tools:context=".Treenipaivakirja" >
 
-    <TextView
-      android:id="@+id/textView"
-      android:layout_width="fill_parent"
-      android:layout_height="493dp"
-      android:layout_gravity="center_horizontal"
-      android:fontFamily="@font/cinzel_bold"
-      android:text="@string/training_events"
-      android:textAlignment="center"
-      android:textColor="@color/colorBlack" />
+  <Button
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/btnload"
+    android:onClick="loadEvents"
+    android:text="@string/Load"/>
 
-    <Button
-      android:id="@+id/btn_add_training_event"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="20dp"
-      android:layout_gravity="center_horizontal"
-      android:onClick="addEvent"
-      android:text="@string/add_training_event" />
-  </LinearLayout>
-</ScrollView>
+  <Button
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/btnadd"
+    android:onClick="addEvent"
+    android:text="@string/Add"/>
+
+  <Button
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/btnfind"
+    android:onClick="findEvents"
+    android:text="@string/Find"/>
+
+
+  <Button
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/btnupdate"
+    android:onClick="updateEvent"
+    android:text="@string/Update"/>
+
+</RelativeLayout>

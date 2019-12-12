@@ -1,49 +1,65 @@
 package com.example.mobidogi;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
+
 public class Treenipaivakirja extends AppCompatActivity {
-  TextView textViewTrainingEvents;
+
+  TextView lst;
+  EditText eventdate;
+  EditText eventdescription;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.treenipaivakirja_activity);
+  }
 
-    textViewTrainingEvents = (TextView) findViewById(R.id.textView);
-
+  public void loadEvents(View view) {
+    DBHelper dbHandler = new DBHelper(this, null, null, 1);
+    lst.setText(dbHandler.loadHandler());
+    eventdate.setText("");
+    eventdescription.setText("");
   }
 
   public void addEvent(View view) {
-    Intent intAddEvent = new Intent(this, AddEventActivity.class);
-    startActivityForResult(intAddEvent, 2);
-
+    DBHelper dbHandler = new DBHelper(this, null, null, 1);
+    int date = Integer.parseInt(eventdate.getText().toString());
+    String description = eventdescription.getText().toString();
+    DisplayEvent event = new DisplayEvent(date, description);
+    dbHandler.addHandler(event);
+    eventdate.setText("");
+    eventdescription.setText("");
   }
 
-  String[] previousValue = new String[10000];
-  int i = 0;
+  public void findEvents(View view) {
+    DBHelper dbHandler = new DBHelper(this, null, null, 1);
+    DisplayEvent event = dbHandler.findHandler(eventdescription.getText().toString());
+    if (event != null) {
+      lst.setText(String.valueOf(event.getDate()) + " " + event.getEventDescription());
 
-  @Override
-  protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
-    super.onActivityResult(requestCode, resultCode, data);
-
-    if (requestCode == 2) {
-      if (null != data) {
-        String event = data.getStringExtra("EVENT");
-        previousValue[i] = event;
-        i++;
-        textViewTrainingEvents.setText(event);
-      }
-      for (int i = 0; previousValue.length(); i++){
-//displaying all the previous values
-        Log.e("someTag","value : "+previousValue[i]);
-      }
+      } else {
+      lst.setText("Ei löydy");
+      eventdate.setText("");
+      eventdescription.setText("");
     }
   }
+
+  public void updateEvent(View view) {
+    DBHelper dbHandler = new DBHelper(this, null, null, 1);
+    boolean result = dbHandler.updateHandler(Integer.parseInt(
+      eventdate.getText().toString()), eventdescription.getText().toString());
+    if (result) {
+      eventdate.setText("");
+      eventdescription.setText("");
+      lst.setText("Merkintä päivitetty");
+    } else
+      eventdate.setText("Ei löydy");
+  }
 }
+
+
