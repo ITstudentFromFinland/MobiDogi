@@ -32,8 +32,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.mobidogi.ui.login.LoginActivity"
+            android:label="@string/title_activity_login" />
         <activity android:name="com.example.mobidogi.YksinolonkoulutusPDF" />
         <activity android:name="com.example.mobidogi.YksinoloLuentoPDF" />
         <activity android:name="com.example.mobidogi.YksinoloValikkoActivity" />
