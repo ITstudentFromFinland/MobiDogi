@@ -46,7 +46,7 @@
 24-->[com.android.billingclient:billing:2.0.3] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\109982e594e5a2efdaac87080deb8bfd\billing-2.0.3\AndroidManifest.xml:10:22-64
 25
 26    <application
-26-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:18:3-77:17
+26-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:18:3-76:17
 27        android:allowBackup="true"
 27-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:19:5-31
 28        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
@@ -63,167 +63,164 @@
 34        android:testOnly="true"
 35        android:theme="@style/AppTheme" >
 35-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:24:5-36
-36        <activity android:name="com.example.mobidogi.AddEventActivity" />
-36-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:25:5-59
-36-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:25:15-47
-37        <activity android:name="com.example.mobidogi.YksinolonkoulutusPDF" />
-37-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:26:5-54
-37-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:26:15-51
-38        <activity android:name="com.example.mobidogi.YksinoloLuentoPDF" />
-38-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:27:5-51
-38-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:27:15-48
-39        <activity android:name="com.example.mobidogi.YksinoloValikkoActivity" />
-39-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:28:5-57
-39-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:28:15-54
-40        <activity android:name="com.example.mobidogi.LenkkeilyValikkoActivity" />
-40-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:29:5-58
-40-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:29:15-55
-41        <activity android:name="com.example.mobidogi.YhteysKouluttajaanActivity" />
-41-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:30:5-60
-41-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:30:15-57
-42        <activity
-42-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:31:5-33:40
-43            android:name="com.example.mobidogi.SecondActivity"
+36        <activity android:name="com.example.mobidogi.YksinolonkoulutusPDF" />
+36-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:25:5-54
+36-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:25:15-51
+37        <activity android:name="com.example.mobidogi.YksinoloLuentoPDF" />
+37-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:26:5-51
+37-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:26:15-48
+38        <activity android:name="com.example.mobidogi.YksinoloValikkoActivity" />
+38-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:27:5-57
+38-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:27:15-54
+39        <activity android:name="com.example.mobidogi.LenkkeilyValikkoActivity" />
+39-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:28:5-58
+39-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:28:15-55
+40        <activity android:name="com.example.mobidogi.YhteysKouluttajaanActivity" />
+40-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:29:5-60
+40-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:29:15-57
+41        <activity
+41-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:30:5-32:40
+42            android:name="com.example.mobidogi.SecondActivity"
+42-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:31:7-37
+43            android:label="SecondActivity" />
 43-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:32:7-37
-44            android:label="SecondActivity" />
-44-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:33:7-37
-45        <activity
-45-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:34:5-36:40
-46            android:name="com.example.mobidogi.ThirdActivity"
-46-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:35:7-36
-47            android:label=".ThirdActivity" />
-47-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:36:7-37
-48        <activity android:name="com.example.mobidogi.Treenipaivakirja" />
-48-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:37:5-50
-48-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:37:15-47
-49        <activity android:name="com.example.mobidogi.PoisKouluttaminen" />
-49-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:38:5-51
-49-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:38:15-48
-50        <activity android:name="com.example.mobidogi.AktivointiVinkkeja" />
-50-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:39:5-52
-50-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:39:15-49
-51        <activity android:name="com.example.mobidogi.LuentoHairitsevakaytos" />
-51-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:40:5-56
-51-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:40:15-53
-52        <activity android:name="com.example.mobidogi.HairitsevaKaytosValikko" />
-52-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:41:5-57
-52-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:41:15-54
-53        <activity android:name="com.example.mobidogi.HoitotoimenpiteetOhjePDF" />
-53-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:42:5-58
-53-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:42:15-55
-54        <activity android:name="com.example.mobidogi.LuentoHoitotoimenpiteet" />
-54-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:43:5-57
-54-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:43:15-54
-55        <activity android:name="com.example.mobidogi.HoitotoimenpiteetValikko" />
-55-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:44:5-58
-55-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:44:15-55
-56        <activity android:name="com.example.mobidogi.VideoPlayActivity" />
-56-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:45:5-51
-56-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:45:15-48
-57        <activity android:name="com.example.mobidogi.LuoksetulonkoulutusPdfActivity" />
-57-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:46:5-64
-57-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:46:15-61
-58        <activity android:name="com.example.mobidogi.LuentoLuoksetuloActivity" />
-58-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:47:5-58
-58-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:47:15-55
-59        <activity
-59-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:48:5-50:67
-60            android:name="com.example.mobidogi.LuoksetuloValikkoActivity"
-60-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:49:7-48
-61            android:label="@string/title_activity_luoksetulo_valikko" />
-61-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:50:7-64
-62        <activity android:name="com.example.mobidogi.OhittaminenActivity" />
-62-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:51:5-53
-62-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:51:15-50
-63        <activity android:name="com.example.mobidogi.MotivointiActivity" />
-63-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:52:5-52
-63-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:52:15-49
-64        <activity android:name="com.example.mobidogi.UloslahtorauhallisestiActivity" />
-64-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:53:5-64
-64-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:53:15-61
-65        <activity android:name="com.example.mobidogi.KaupunkikavelyActivity" />
-65-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:54:5-56
-65-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:54:15-53
-66        <activity android:name="com.example.mobidogi.KauniistikavelyActivity" />
-66-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:55:5-57
-66-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:55:15-54
-67        <activity android:name="com.example.mobidogi.ValineetActivity" />
-67-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:56:5-50
-67-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:56:15-47
-68        <activity android:name="com.example.mobidogi.LahellapysyminenActivity" />
-68-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:57:5-58
-68-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:57:15-55
-69        <activity android:name="com.example.mobidogi.RauhoittuminenActivity" />
-69-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:58:5-56
-69-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:58:15-53
-70        <activity android:name="com.example.mobidogi.OmistajastapoisActivity" />
-70-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:59:5-57
-70-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:59:15-54
-71        <activity android:name="com.example.mobidogi.KohdentaminenActivity" />
-71-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:60:5-55
-71-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:60:15-52
-72        <activity android:name="com.example.mobidogi.EhdollistaminenActivity" />
-72-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:61:5-57
-72-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:61:15-54
-73        <activity android:name="com.example.mobidogi.KontaktiActivity" />
-73-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:62:5-50
-73-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:62:15-47
-74        <activity
-74-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:63:5-65:62
-75            android:name="com.example.mobidogi.HihnanKirousActivity"
-75-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:64:7-43
-76            android:label="@string/title_activity_hihnan_kirous" />
-76-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:65:7-59
-77        <activity android:name="com.example.mobidogi.LuentoOppiminenActivity" />
-77-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:66:5-57
-77-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:66:15-54
-78        <activity
-78-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:67:5-76:16
-79            android:name="com.example.mobidogi.MainActivity"
+44        <activity
+44-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:33:5-35:40
+45            android:name="com.example.mobidogi.ThirdActivity"
+45-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:34:7-36
+46            android:label=".ThirdActivity" />
+46-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:35:7-37
+47        <activity android:name="com.example.mobidogi.Treenipaivakirja" />
+47-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:36:5-50
+47-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:36:15-47
+48        <activity android:name="com.example.mobidogi.PoisKouluttaminen" />
+48-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:37:5-51
+48-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:37:15-48
+49        <activity android:name="com.example.mobidogi.AktivointiVinkkeja" />
+49-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:38:5-52
+49-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:38:15-49
+50        <activity android:name="com.example.mobidogi.LuentoHairitsevakaytos" />
+50-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:39:5-56
+50-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:39:15-53
+51        <activity android:name="com.example.mobidogi.HairitsevaKaytosValikko" />
+51-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:40:5-57
+51-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:40:15-54
+52        <activity android:name="com.example.mobidogi.HoitotoimenpiteetOhjePDF" />
+52-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:41:5-58
+52-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:41:15-55
+53        <activity android:name="com.example.mobidogi.LuentoHoitotoimenpiteet" />
+53-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:42:5-57
+53-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:42:15-54
+54        <activity android:name="com.example.mobidogi.HoitotoimenpiteetValikko" />
+54-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:43:5-58
+54-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:43:15-55
+55        <activity android:name="com.example.mobidogi.VideoPlayActivity" />
+55-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:44:5-51
+55-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:44:15-48
+56        <activity android:name="com.example.mobidogi.LuoksetulonkoulutusPdfActivity" />
+56-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:45:5-64
+56-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:45:15-61
+57        <activity android:name="com.example.mobidogi.LuentoLuoksetuloActivity" />
+57-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:46:5-58
+57-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:46:15-55
+58        <activity
+58-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:47:5-49:67
+59            android:name="com.example.mobidogi.LuoksetuloValikkoActivity"
+59-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:48:7-48
+60            android:label="@string/title_activity_luoksetulo_valikko" />
+60-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:49:7-64
+61        <activity android:name="com.example.mobidogi.OhittaminenActivity" />
+61-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:50:5-53
+61-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:50:15-50
+62        <activity android:name="com.example.mobidogi.MotivointiActivity" />
+62-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:51:5-52
+62-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:51:15-49
+63        <activity android:name="com.example.mobidogi.UloslahtorauhallisestiActivity" />
+63-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:52:5-64
+63-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:52:15-61
+64        <activity android:name="com.example.mobidogi.KaupunkikavelyActivity" />
+64-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:53:5-56
+64-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:53:15-53
+65        <activity android:name="com.example.mobidogi.KauniistikavelyActivity" />
+65-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:54:5-57
+65-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:54:15-54
+66        <activity android:name="com.example.mobidogi.ValineetActivity" />
+66-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:55:5-50
+66-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:55:15-47
+67        <activity android:name="com.example.mobidogi.LahellapysyminenActivity" />
+67-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:56:5-58
+67-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:56:15-55
+68        <activity android:name="com.example.mobidogi.RauhoittuminenActivity" />
+68-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:57:5-56
+68-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:57:15-53
+69        <activity android:name="com.example.mobidogi.OmistajastapoisActivity" />
+69-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:58:5-57
+69-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:58:15-54
+70        <activity android:name="com.example.mobidogi.KohdentaminenActivity" />
+70-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:59:5-55
+70-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:59:15-52
+71        <activity android:name="com.example.mobidogi.EhdollistaminenActivity" />
+71-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:60:5-57
+71-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:60:15-54
+72        <activity android:name="com.example.mobidogi.KontaktiActivity" />
+72-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:61:5-50
+72-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:61:15-47
+73        <activity
+73-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:62:5-64:62
+74            android:name="com.example.mobidogi.HihnanKirousActivity"
+74-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:63:7-43
+75            android:label="@string/title_activity_hihnan_kirous" />
+75-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:64:7-59
+76        <activity android:name="com.example.mobidogi.LuentoOppiminenActivity" />
+76-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:65:5-57
+76-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:65:15-54
+77        <activity
+77-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:66:5-75:16
+78            android:name="com.example.mobidogi.MainActivity"
+78-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:67:7-35
+79            android:label="MainActivity" >
 79-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:68:7-35
-80            android:label="MainActivity" >
-80-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:69:7-35
-81            <intent-filter>
-81-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:70:7-75:23
-82                <action android:name="android.intent.action.MAIN" />
+80            <intent-filter>
+80-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:69:7-74:23
+81                <action android:name="android.intent.action.MAIN" />
+81-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:70:9-61
+81-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:70:17-58
+82                <action android:name="android.intent.action.VIEW" />
 82-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:71:9-61
 82-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:71:17-58
-83                <action android:name="android.intent.action.VIEW" />
-83-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:72:9-61
-83-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:72:17-58
-84
-85                <category android:name="android.intent.category.LAUNCHER" />
-85-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:74:9-69
-85-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:74:19-66
-86            </intent-filter>
-87        </activity>
-88
-89        <meta-data
-89-->[com.android.billingclient:billing:2.0.3] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\109982e594e5a2efdaac87080deb8bfd\billing-2.0.3\AndroidManifest.xml:13:9-15:37
-90            android:name="com.google.android.play.billingclient.version"
-90-->[com.android.billingclient:billing:2.0.3] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\109982e594e5a2efdaac87080deb8bfd\billing-2.0.3\AndroidManifest.xml:14:13-73
-91            android:value="2.0.3" />
-91-->[com.android.billingclient:billing:2.0.3] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\109982e594e5a2efdaac87080deb8bfd\billing-2.0.3\AndroidManifest.xml:15:13-34
-92
-93        <activity
-93-->[com.android.billingclient:billing:2.0.3] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\109982e594e5a2efdaac87080deb8bfd\billing-2.0.3\AndroidManifest.xml:17:9-20:75
-94            android:name="com.android.billingclient.api.ProxyBillingActivity"
-94-->[com.android.billingclient:billing:2.0.3] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\109982e594e5a2efdaac87080deb8bfd\billing-2.0.3\AndroidManifest.xml:18:13-78
-95            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-95-->[com.android.billingclient:billing:2.0.3] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\109982e594e5a2efdaac87080deb8bfd\billing-2.0.3\AndroidManifest.xml:19:13-96
-96            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-96-->[com.android.billingclient:billing:2.0.3] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\109982e594e5a2efdaac87080deb8bfd\billing-2.0.3\AndroidManifest.xml:20:13-72
-97
-98        <provider
-98-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:23:9-27:43
-99            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
-99-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:24:13-83
-100            android:authorities="com.example.mobidogi.lifecycle-trojan"
-100-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:25:13-68
-101            android:exported="false"
-101-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:26:13-37
-102            android:multiprocess="true" />
-102-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:27:13-40
-103    </application>
-104
-105</manifest>
+83
+84                <category android:name="android.intent.category.LAUNCHER" />
+84-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:73:9-69
+84-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:73:19-66
+85            </intent-filter>
+86        </activity>
+87
+88        <meta-data
+88-->[com.android.billingclient:billing:2.0.3] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\109982e594e5a2efdaac87080deb8bfd\billing-2.0.3\AndroidManifest.xml:13:9-15:37
+89            android:name="com.google.android.play.billingclient.version"
+89-->[com.android.billingclient:billing:2.0.3] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\109982e594e5a2efdaac87080deb8bfd\billing-2.0.3\AndroidManifest.xml:14:13-73
+90            android:value="2.0.3" />
+90-->[com.android.billingclient:billing:2.0.3] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\109982e594e5a2efdaac87080deb8bfd\billing-2.0.3\AndroidManifest.xml:15:13-34
+91
+92        <activity
+92-->[com.android.billingclient:billing:2.0.3] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\109982e594e5a2efdaac87080deb8bfd\billing-2.0.3\AndroidManifest.xml:17:9-20:75
+93            android:name="com.android.billingclient.api.ProxyBillingActivity"
+93-->[com.android.billingclient:billing:2.0.3] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\109982e594e5a2efdaac87080deb8bfd\billing-2.0.3\AndroidManifest.xml:18:13-78
+94            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+94-->[com.android.billingclient:billing:2.0.3] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\109982e594e5a2efdaac87080deb8bfd\billing-2.0.3\AndroidManifest.xml:19:13-96
+95            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+95-->[com.android.billingclient:billing:2.0.3] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\109982e594e5a2efdaac87080deb8bfd\billing-2.0.3\AndroidManifest.xml:20:13-72
+96
+97        <provider
+97-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:23:9-27:43
+98            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
+98-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:24:13-83
+99            android:authorities="com.example.mobidogi.lifecycle-trojan"
+99-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:25:13-68
+100            android:exported="false"
+100-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:26:13-37
+101            android:multiprocess="true" />
+101-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:27:13-40
+102    </application>
+103
+104</manifest>

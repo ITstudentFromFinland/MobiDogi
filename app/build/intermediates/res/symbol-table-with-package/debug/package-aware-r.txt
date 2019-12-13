@@ -1056,6 +1056,7 @@ drawable arsyttavakaytos_kuva
 drawable autossa_matkustaminen
 drawable avd_hide_password
 drawable avd_show_password
+drawable contact
 drawable default_scroll_handle_bottom
 drawable default_scroll_handle_left
 drawable default_scroll_handle_right
@@ -1066,11 +1067,13 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable diary
 drawable ehdollistaminen_ilmaiseen
 drawable hairitseva_kaytos
 drawable hihnan_kirous
 drawable hihnassa_kauniisti_kavely
 drawable hoitotoimenpiteet
+drawable home
 drawable ic_dashboard_black_24dp
 drawable ic_home_black_24dp
 drawable ic_launcher

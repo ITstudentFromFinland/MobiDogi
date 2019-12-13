@@ -71,8 +71,9 @@
 
   <string name="Load">Näytä treenimerkinnät</string>
   <string name="Add">Lisää treenimerkintä</string>
-  <string name="Date">Päiväys muodossa ppkkvvvv</string>
+  <string name="Date">Päiväys</string>
   <string name="Description">Treenin kuvaus ja miten meni</string>
-  <string name="list">Kirjoita ensin treenimerkintä (päiväys, kuvaus ja miten meni), minkä jälkeen voit lisätä merkinnän ja näyttää
-    sen ja vanhat merkinnät. Yksittäisten näyttäminen ei valitettavasti ole mahdollista.</string>
+  <string name="list">Kirjoita ensin treenimerkintä (päiväys muodossa ppkkvvvv, kuvaus ja miten meni), minkä jälkeen voit lisätä merkinnän ja näyttää
+    sen ja vanhat merkinnät. Yksittäisten näyttäminen ei valitettavasti ole mahdollista. Huomioithan, että merkintöjä voi olla vain yksi per päiväys,
+    joten jos treenejä on päivässä useampi, merkitsethän ne samaan merkintään.</string>
 </resources>
