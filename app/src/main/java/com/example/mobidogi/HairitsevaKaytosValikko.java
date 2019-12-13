@@ -36,6 +36,8 @@ public class HairitsevaKaytosValikko extends AppCompatActivity {
             break;
 
           case R.id.navigation_notifications:
+            Intent tp = new Intent(HairitsevaKaytosValikko.this, Treenipaivakirja.class);
+            startActivity(tp);
             break;
         }
         return false;

@@ -1,5 +1,7 @@
 package com.example.mobidogi;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
@@ -19,10 +21,10 @@ public class Treenipaivakirja extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.treenipaivakirja_activity);
 
-    lst = (TextView)findViewById(R.id.list);
+    lst = (TextView) findViewById(R.id.list);
     lst.setMovementMethod(new ScrollingMovementMethod());
-    eventdate = (EditText)findViewById(R.id.eventDate);
-    eventdescription = (EditText)findViewById(R.id.eventDescription);
+    eventdate = (EditText) findViewById(R.id.eventDate);
+    eventdescription = (EditText) findViewById(R.id.eventDescription);
   }
 
   public void loadEvents(View view) {
@@ -37,10 +39,10 @@ public class Treenipaivakirja extends AppCompatActivity {
     int date = Integer.parseInt(eventdate.getText().toString());
     String description = eventdescription.getText().toString();
     DisplayEvent event = new DisplayEvent(date, description);
+
     dbHandler.addHandler(event);
     eventdate.setText("");
     eventdescription.setText("");
-    }
   }
-
+}
 

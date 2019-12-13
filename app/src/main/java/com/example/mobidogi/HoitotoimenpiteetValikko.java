@@ -36,6 +36,8 @@ public class HoitotoimenpiteetValikko extends AppCompatActivity {
             break;
 
           case R.id.navigation_notifications:
+            Intent tp = new Intent(HoitotoimenpiteetValikko.this, Treenipaivakirja.class);
+            startActivity(tp);
             break;
         }
         return false;

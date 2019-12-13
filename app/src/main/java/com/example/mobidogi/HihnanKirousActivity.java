@@ -36,6 +36,8 @@ public class HihnanKirousActivity extends AppCompatActivity {
             break;
 
           case R.id.navigation_notifications:
+            Intent tp = new Intent(HihnanKirousActivity.this, Treenipaivakirja.class);
+            startActivity(tp);
             break;
         }
         return false;
