@@ -1,5 +1,6 @@
 package com.example.mobidogi;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -44,10 +45,13 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
 
       case R.id.tvManualLink:
 
+        startActivity(new Intent(this, Kayttoehdot.class));
 
         break;
 
       case R.id.tvTrainerInfoLink:
+
+        startActivity(new Intent(this, TrainerInfo.class));
 
         break;
     }

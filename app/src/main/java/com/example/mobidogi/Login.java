@@ -45,7 +45,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
       case R.id.tvTrainerInfoLink:
 
-        startActivity(new Intent(this, Kayttoehdot.class));
+        startActivity(new Intent(this, TrainerInfo.class));
 
         break;
     }
