@@ -12,6 +12,7 @@
   <uses-permission android:name="android.permission.RECORD_VIDEO" />
   <uses-permission android:name="android.permission.CAMERA" />
   <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_CONTACTS" />
 
   <dist:module dist:instant="true" />
 
@@ -22,6 +23,17 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
+    <activity android:name=".TrainerInfo"></activity>
+    <activity android:name=".Kayttoehdot" />
+    <activity android:name=".Register" />
+    <activity android:name=".Login" >
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <action android:name="android.intent.action.VIEW" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
     <activity android:name=".YksinolonkoulutusPDF" />
     <activity android:name=".YksinoloLuentoPDF" />
     <activity android:name=".YksinoloValikkoActivity" />
@@ -65,14 +77,7 @@
     <activity android:name=".LuentoOppiminenActivity" />
     <activity
       android:name=".MainActivity"
-      android:label="MainActivity">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <action android:name="android.intent.action.VIEW" />
-
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
-    </activity>
+      android:label="MainActivity"/>
   </application>
 
 </manifest>

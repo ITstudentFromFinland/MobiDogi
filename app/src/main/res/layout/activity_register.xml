@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:padding="10dp"
+  android:layout_height="match_parent"
+  tools:context=".Register">
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:text="@string/name"
+    android:layout_height="wrap_content"/>
+
+  <EditText
+    android:id="@+id/etName"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content"/>
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:text="@string/age"
+    android:layout_height="wrap_content"/>
+
+  <EditText
+    android:id="@+id/etAge"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content"/>
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:text="@string/prompt_email"
+    android:layout_height="wrap_content"/>
+
+    <EditText
+      android:id="@+id/etUsername"
+      android:layout_width="match_parent"
+      android:layout_marginBottom="10dp"
+      android:layout_height="wrap_content"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:text="@string/prompt_password"
+      android:layout_height="wrap_content"/>
+
+    <EditText
+      android:id="@+id/etPassword"
+      android:layout_width="match_parent"
+      android:layout_marginBottom="10dp"
+      android:inputType="textPassword"
+      android:layout_height="wrap_content"/>
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:text="@string/dog_name"
+    android:layout_height="wrap_content"/>
+
+  <EditText
+    android:id="@+id/etDogName"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content"/>
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:text="@string/rotu"
+    android:layout_height="wrap_content"/>
+
+  <EditText
+    android:id="@+id/etRotu"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:inputType="textPassword"
+    android:layout_height="wrap_content"/>
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:text="@string/dog_age"
+    android:layout_height="wrap_content"/>
+
+  <EditText
+    android:id="@+id/etDogAge"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content"/>
+
+    <Button
+      android:id="@+id/bRegister"
+      android:text="@string/register"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:text="@string/policy_settings"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:layout_gravity="center_horizontal"
+    android:textStyle="bold"/>
+
+  <TextView
+    android:id="@+id/tvManualLink"
+    android:layout_width="wrap_content"
+    android:text="@string/manual"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="3dp"/>
+
+  <TextView
+    android:id="@+id/tvTrainerInfoLink"
+    android:layout_width="wrap_content"
+    android:text="@string/trainer_info"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

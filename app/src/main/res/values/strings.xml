@@ -22,16 +22,26 @@
   <string name="title_omistajasta_poispain">Omistajasta poispäin</string>
   <string name="title_luento_luoksetulo">Luento: luoksetulo</string>
   <string name="title_luoksetulonkoulutus">Luoksetulon koulutus</string>
+
   <string name="title_activity_login">Kirjaudu</string>
+  <string name="name">Oma nimi</string>
+  <string name="age">Ikä</string>
+  <string name="dog_name">Koiran nimi</string>
+  <string name="rotu">Rotu</string>
+  <string name="dog_age">Ikä</string>
   <string name="prompt_email">Sähköposti</string>
   <string name="prompt_password">Salasana</string>
-  <string name="action_sign_in">Kirjaudu tai rekisteröidy</string>
+  <string name="register">Rekisteröidy</string>
   <string name="action_sign_in_short">Kirjaudu</string>
   <string name="welcome">"Tervetuloa !"</string>
   <string name="invalid_username">Not a valid username</string>
   <string name="invalid_password">Salasanan on oltava vähintään 8 kirjainta</string>
   <string name="login_failed">"Kirjautuminen epäonnistui"</string>
   <string name="attemptsleft">Yrityksiä jäljellä </string>
+  <string name="policy_settings">Rekisteröityessäsi hyväksyt sovelluksen käyttöehdot</string>
+  <string name="trainer_info">Tietoa kouluttajasta</string>
+  <string name="manual">Käyttöehdot</string>
+
   <string name="login_logo">Login logo</string>
   <string name="title_activity_second">SecondActivity</string>
   <string name="luento_oppiminen">Luento: oppiminen</string>
@@ -77,13 +87,4 @@
     sen ja vanhat merkinnät. Yksittäisten näyttäminen ei valitettavasti ole mahdollista. Huomioithan, että merkintöjä voi olla vain yksi per päiväys,
     joten jos treenejä on päivässä useampi, merkitsethän ne samaan merkintään.</string>
 
-  <string name="email">Sähköposti</string>
-  <string name="password">Salasana</string>
-  <string name="sign_in">Rekisteröidy tai kirjaudu</string>
-  <string name="sign_in_short">Kirjaudu</string>
-  <string name="error_invalid_email">Salasana on väärin</string>
-  <string name="error_invalid_password">Salasana on liian lyhyt</string>
-  <string name="error_incorrect_password">Salasana on väärin</string>
-  <string name="error_field_required">Pakollinen kenttä</string>
-  <string name="permission_rationale">Yhteysluvat vaaditaan sähköpostiyhteyksiin</string>
 </resources>
