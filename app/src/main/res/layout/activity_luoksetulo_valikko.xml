@@ -39,7 +39,7 @@
         android:contentDescription="@string/title_luoksetulonkoulutus"
         android:id="@+id/simpleImageViewLuoksetulonKoulutus"
         android:layout_width="fill_parent"
-        android:layout_height="260dp"
+        android:layout_height="300dp"
         android:drawablePadding="@null"
         android:background="@drawable/luoksetulon_koulutus"
         android:paddingTop="8dp"

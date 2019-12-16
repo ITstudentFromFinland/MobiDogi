@@ -67,7 +67,7 @@
         android:contentDescription="@string/title_yksinolonkoulutus"
         android:id="@+id/simpleImageViewYksinolonkoulutus"
         android:layout_width="fill_parent"
-        android:layout_height="200dp"
+        android:layout_height="230dp"
         android:drawablePadding="@null"
         android:background="@drawable/koulutus_yksinolo"
         android:paddingTop="8dp"
