@@ -1233,6 +1233,8 @@ id line3
 id list
 id listMode
 id list_item
+id loading
+id login
 id masked
 id media_actions
 id message
@@ -1260,6 +1262,7 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
+id password
 id pdfView
 id percent
 id pin
@@ -1375,6 +1378,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id username
 id videoView
 id view_offset_helper
 id visible
@@ -1441,6 +1445,7 @@ layout activity_kohdentaminen
 layout activity_kontakti
 layout activity_lahellapysyminen
 layout activity_lenkkeily_valikko
+layout activity_login
 layout activity_luento_hairitsevakaytos
 layout activity_luento_hoitotoimenpiteet
 layout activity_luento_luoksetulo

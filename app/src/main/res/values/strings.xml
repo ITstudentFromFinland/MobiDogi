@@ -76,4 +76,14 @@
   <string name="list">Kirjoita ensin treenimerkintä (päiväys muodossa ppkkvvvv, kuvaus ja miten meni), minkä jälkeen voit lisätä merkinnän ja näyttää
     sen ja vanhat merkinnät. Yksittäisten näyttäminen ei valitettavasti ole mahdollista. Huomioithan, että merkintöjä voi olla vain yksi per päiväys,
     joten jos treenejä on päivässä useampi, merkitsethän ne samaan merkintään.</string>
+
+  <string name="email">Sähköposti</string>
+  <string name="password">Salasana</string>
+  <string name="sign_in">Rekisteröidy tai kirjaudu</string>
+  <string name="sign_in_short">Kirjaudu</string>
+  <string name="error_invalid_email">Salasana on väärin</string>
+  <string name="error_invalid_password">Salasana on liian lyhyt</string>
+  <string name="error_incorrect_password">Salasana on väärin</string>
+  <string name="error_field_required">Pakollinen kenttä</string>
+  <string name="permission_rationale">Yhteysluvat vaaditaan sähköpostiyhteyksiin</string>
 </resources>
