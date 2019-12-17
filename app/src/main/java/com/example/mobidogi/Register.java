@@ -29,7 +29,7 @@ public class Register extends AppCompatActivity {
     final EditText etAge = (EditText) findViewById(R.id.etAge);
     final EditText etDogName = (EditText) findViewById(R.id.etDogName);
     final EditText etRotu = (EditText) findViewById(R.id.etRotu);
-    
+
     final Button bRegister = (Button) findViewById(R.id.bRegister);
 
     bRegister.setOnClickListener(new View.OnClickListener() {
@@ -48,7 +48,7 @@ public class Register extends AppCompatActivity {
           @Override
           public void onResponse(String response) {
             try {
-              JSONObject jsonObject = new JSONObject(response);
+              JSONObject jsonObject = new JSONObject(response.substring(response.indexOf("{"), response.lastIndexOf("}") + 1));
               boolean success = jsonObject.getBoolean("success");
 
               if (success) {

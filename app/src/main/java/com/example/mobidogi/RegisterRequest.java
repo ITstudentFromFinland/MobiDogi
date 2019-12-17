@@ -13,7 +13,7 @@ public class RegisterRequest extends StringRequest {
   public RegisterRequest(String name, String username, String password, int age, String dogname, String rotu, Response.Listener<String> listener) {
     super(Method.POST, REGISTER_REQUEST_URL, listener, null);
     params = new HashMap<>();
-    params.put("name", name);
+    params.put("Name", name);
     params.put("username", username);
     params.put("password", password);
     params.put("age", age + "");
