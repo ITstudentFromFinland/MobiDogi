@@ -16,36 +16,25 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class Register extends AppCompatActivity implements View.OnClickListener {
-
-  Button bRegister;
-  EditText etName, etAge, etUsername, etPassword, etDogName, etRotu;
-  TextView tvManualLink, tvTrainerInfoLink;
+public class Register extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_register);
 
-    etName = (EditText)findViewById(R.id.etName);
-    etAge = (EditText)findViewById(R.id.etAge);
-    etUsername = (EditText)findViewById(R.id.etUsername);
-    etPassword = (EditText)findViewById(R.id.etPassword);
-    etDogName = (EditText)findViewById(R.id.etDogName);
-    etRotu = (EditText)findViewById(R.id.etRotu);
-    bRegister = (Button)findViewById(R.id.bRegister);
-    tvManualLink = (TextView)findViewById(R.id.tvManualLink);
-    tvTrainerInfoLink = (TextView)findViewById(R.id.tvTrainerInfoLink);
+    final EditText etName = (EditText) findViewById(R.id.etName);
+    final EditText etAge = (EditText) findViewById(R.id.etAge);
+    final EditText etUsername = (EditText) findViewById(R.id.etUsername);
+    final EditText etPassword = (EditText) findViewById(R.id.etPassword);
+    final EditText etDogName = (EditText) findViewById(R.id.etDogName);
+    final EditText etRotu = (EditText) findViewById(R.id.etRotu);
+    final Button bRegister = (Button) findViewById(R.id.bRegister);
 
-    bRegister.setOnClickListener(this);
-    tvManualLink.setOnClickListener(this);
-    tvTrainerInfoLink.setOnClickListener(this);
-  }
+    bRegister.setOnClickListener(new View.OnClickListener() {
 
-  @Override
-  public void onClick(View view) {
-    switch(view.getId()) {
-      case R.id.bRegister:
+      @Override
+      public void onClick(View view) {
         String name = etName.getText().toString();
         String username = etUsername.getText().toString();
         String password = etPassword.getText().toString();
@@ -53,18 +42,18 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         String rotu = etRotu.getText().toString();
         int age = Integer.parseInt(etAge.getText().toString());
 
-        Response.Listener<String> responseListener = new Response.Listener<String>(){
+        Response.Listener<String> responseListener = new Response.Listener<String>() {
 
           @Override
           public void onResponse(String response) {
             try {
-              JSONObject jsonResponse = new JSONObject(response);
-              boolean success = jsonResponse.getBoolean("success");
+              JSONObject jsonObject = new JSONObject(response);
+              boolean success = jsonObject.getBoolean("success");
 
               if (success) {
                 Intent intent = new Intent(Register.this, Login.class);
                 Register.this.startActivity(intent);
-              } else{
+              } else {
                 AlertDialog.Builder builder = new AlertDialog.Builder(Register.this);
                 builder.setMessage("Rekisteröityminen epäonnistui")
                   .setNegativeButton("Yritä uudesaan", null)
@@ -81,20 +70,27 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         RegisterRequest registerRequest = new RegisterRequest(name, username, age, password, dogname, rotu, responseListener);
         RequestQueue queue = Volley.newRequestQueue(Register.this);
         queue.add(registerRequest);
+      }
+    });
 
-        break;
+    TextView tvManualLink = findViewById(R.id.tvManualLink);
+    TextView tvTrainerInfoLink = findViewById(R.id.tvTrainerInfoLink);
 
-      case R.id.tvManualLink:
+    tvManualLink.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
 
-        startActivity(new Intent(this, Kayttoehdot.class));
+        Intent intManual = new Intent(Register.this, Kayttoehdot.class);
+        startActivity(intManual);
+      }
+    });
 
-        break;
-
-      case R.id.tvTrainerInfoLink:
-
-        startActivity(new Intent(this, TrainerInfo.class));
-
-        break;
-    }
+    tvTrainerInfoLink.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        Intent intInfo = new Intent(Register.this, TrainerInfo.class);
+        startActivity(intInfo);
+      }
+    });
   }
 }
