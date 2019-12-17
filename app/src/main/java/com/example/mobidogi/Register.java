@@ -24,11 +24,12 @@ public class Register extends AppCompatActivity {
     setContentView(R.layout.activity_register);
 
     final EditText etName = (EditText) findViewById(R.id.etName);
-    final EditText etAge = (EditText) findViewById(R.id.etAge);
     final EditText etUsername = (EditText) findViewById(R.id.etUsername);
     final EditText etPassword = (EditText) findViewById(R.id.etPassword);
+    final EditText etAge = (EditText) findViewById(R.id.etAge);
     final EditText etDogName = (EditText) findViewById(R.id.etDogName);
     final EditText etRotu = (EditText) findViewById(R.id.etRotu);
+    
     final Button bRegister = (Button) findViewById(R.id.bRegister);
 
     bRegister.setOnClickListener(new View.OnClickListener() {
@@ -38,9 +39,9 @@ public class Register extends AppCompatActivity {
         String name = etName.getText().toString();
         String username = etUsername.getText().toString();
         String password = etPassword.getText().toString();
+        int age = Integer.parseInt(etAge.getText().toString());
         String dogname = etDogName.getText().toString();
         String rotu = etRotu.getText().toString();
-        int age = Integer.parseInt(etAge.getText().toString());
 
         Response.Listener<String> responseListener = new Response.Listener<String>() {
 
@@ -67,7 +68,7 @@ public class Register extends AppCompatActivity {
           }
         };
 
-        RegisterRequest registerRequest = new RegisterRequest(name, username, age, password, dogname, rotu, responseListener);
+        RegisterRequest registerRequest = new RegisterRequest(name, username, password, age, dogname, rotu, responseListener);
         RequestQueue queue = Volley.newRequestQueue(Register.this);
         queue.add(registerRequest);
       }
