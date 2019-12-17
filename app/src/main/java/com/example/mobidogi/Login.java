@@ -41,6 +41,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
         userLocalStore.storeUserData(user);
         userLocalStore.setUserLoggedIn(true);
+
         break;
 
       case R.id.tvManualLink:

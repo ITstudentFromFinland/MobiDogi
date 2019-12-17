@@ -19,7 +19,6 @@ public class UserLocalStore {
     spEditor.putString("password", user.password);
     spEditor.putString("dogname", user.dogname);
     spEditor.putString("rotu", user.rotu);
-    spEditor.putInt("dogage", user.dogage);
     spEditor.commit();
   }
 
@@ -30,9 +29,8 @@ public class UserLocalStore {
     String password = userLocalDatabase.getString("password", "");
     String dogname = userLocalDatabase.getString("dogname", "");
     String rotu = userLocalDatabase.getString("rotu", "");
-    int dogage = userLocalDatabase.getInt("dogage", -1);
 
-    User storedUser = new User(name, age, username, password, dogname, rotu, dogage);
+    User storedUser = new User(name, age, username, password, dogname, rotu);
 
     return storedUser;
   }

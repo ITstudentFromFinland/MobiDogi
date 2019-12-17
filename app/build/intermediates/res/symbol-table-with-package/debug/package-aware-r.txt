@@ -1201,7 +1201,6 @@ id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id etAge
-id etDogAge
 id etDogName
 id etName
 id etPassword
