@@ -14,6 +14,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
   EditText etUsername, etPassword;
   TextView tvManualLink, tvTrainerInfoLink;
 
+  UserLocalStore userLocalStore;
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -28,13 +30,17 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     bLogin.setOnClickListener(this);
     tvManualLink.setOnClickListener(this);
     tvTrainerInfoLink.setOnClickListener(this);
+
+    userLocalStore = new UserLocalStore(this);
   }
   @Override
   public void onClick(View view) {
     switch(view.getId()) {
       case R.id.bLogin:
+        User user = new User(null, null);
 
-
+        userLocalStore.storeUserData(user);
+        userLocalStore.setUserLoggedIn(true);
         break;
 
       case R.id.tvManualLink:
