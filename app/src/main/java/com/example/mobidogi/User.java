@@ -4,11 +4,11 @@ public class User {
   String name, username, password, dogname, rotu;
   int age;
 
-  public User(String name, int age, String username, String password, String dogname, String rotu) {
+  public User(String name, String username, String password, int age, String dogname, String rotu) {
     this.name = name;
-    this.age = age;
     this.username = username;
     this.password = password;
+    this.age = age;
     this.dogname = dogname;
     this.rotu = rotu;
   }
