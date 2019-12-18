@@ -1,4 +1,4 @@
-#Wed Dec 18 16:53:54 EET 2019
+#Wed Dec 18 20:24:02 EET 2019
 base.0=C\:\\Users\\Leena\\MobiDogi\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
