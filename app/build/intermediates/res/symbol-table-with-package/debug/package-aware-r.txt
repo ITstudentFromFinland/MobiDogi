@@ -1084,6 +1084,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_notifications_black_24dp
+drawable info
 drawable kaupunkikavely
 drawable kohdentaminen_ilmaiseen
 drawable kontakti_hihnakaytos_paketti
@@ -1518,15 +1519,10 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout treenipaivakirja_activity
 menu bottom_nav_menu
-mipmap button_next32
-mipmap button_next48
-mipmap button_previous32
-mipmap button_previous48
 mipmap ic_launcher
 mipmap ic_launcher_background
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
-mipmap time_icon
 navigation mobile_navigation
 string Add
 string Date

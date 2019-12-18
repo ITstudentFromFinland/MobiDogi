@@ -47,12 +47,22 @@ public class MainActivity extends AppCompatActivity {
       }
     });
 
-    Button MitenKoiraOppii= findViewById(R.id.simpleImageViewMitenKoiraOppii);
-    Button Lenkkeily= findViewById(R.id.simpleImageViewLenkkeily);
-    Button Luoksetulo= findViewById(R.id.simpleImageViewLuoksetulo);
-    Button HairitsevaKaytos= findViewById(R.id.simpleImageViewHairitsevaKaytos);
-    Button Hoitotoimenpiteet= findViewById(R.id.simpleImageViewHoitotoimenpiteet);
+    TextView tvTrainerInfo = findViewById(R.id.tvTrainerInfoLink);
+    Button MitenKoiraOppii = findViewById(R.id.simpleImageViewMitenKoiraOppii);
+    Button Lenkkeily = findViewById(R.id.simpleImageViewLenkkeily);
+    Button Luoksetulo = findViewById(R.id.simpleImageViewLuoksetulo);
+    Button HairitsevaKaytos = findViewById(R.id.simpleImageViewHairitsevaKaytos);
+    Button Hoitotoimenpiteet = findViewById(R.id.simpleImageViewHoitotoimenpiteet);
     Button Yksinolo = findViewById(R.id.simpleImageViewYksinolo);
+
+    tvTrainerInfo.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+
+        Intent intInfo = new Intent(MainActivity.this, TrainerInfo.class);
+        startActivity(intInfo);
+      }
+    });
 
 
     MitenKoiraOppii.setOnClickListener(new View.OnClickListener() {
