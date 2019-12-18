@@ -663,6 +663,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color links
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1379,6 +1380,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tvLogin
 id tvManualLink
 id tvTrainerInfoLink
 id uniform
@@ -1574,9 +1576,9 @@ string add_event
 string add_training_event
 string age
 string aloita_kuvaus
+string already_registered
 string app_name
 string appbar_scrolling_view_behavior
-string attemptsleft
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
@@ -1587,7 +1589,6 @@ string enter_training_event
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
-string invalid_password
 string invalid_username
 string kohdentaminen_ohje
 string kuvaa_video
@@ -1595,7 +1596,6 @@ string lahellapysyminen_ohje
 string laheta_video
 string list
 string login_failed
-string login_logo
 string luento_oppiminen
 string manual
 string mtrl_chip_close_icon_content_description
