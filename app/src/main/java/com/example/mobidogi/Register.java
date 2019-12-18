@@ -76,6 +76,7 @@ public class Register extends AppCompatActivity {
 
     TextView tvManualLink = findViewById(R.id.tvManualLink);
     TextView tvTrainerInfoLink = findViewById(R.id.tvTrainerInfoLink);
+    TextView tvLogin = findViewById(R.id.tvLogin);
 
     tvManualLink.setOnClickListener(new View.OnClickListener() {
       @Override
@@ -91,6 +92,14 @@ public class Register extends AppCompatActivity {
       public void onClick(View v) {
         Intent intInfo = new Intent(Register.this, TrainerInfo.class);
         startActivity(intInfo);
+      }
+    });
+
+    tvLogin.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        Intent intLogin = new Intent(Register.this, Login.class);
+        startActivity(intLogin);
       }
     });
   }

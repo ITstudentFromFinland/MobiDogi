@@ -35,14 +35,12 @@
   <string name="action_sign_in_short">Kirjaudu</string>
   <string name="welcome">"Tervetuloa !"</string>
   <string name="invalid_username">Not a valid username</string>
-  <string name="invalid_password">Salasanan on oltava vähintään 8 kirjainta</string>
   <string name="login_failed">"Kirjautuminen epäonnistui"</string>
-  <string name="attemptsleft">Yrityksiä jäljellä </string>
   <string name="policy_settings">Rekisteröityessäsi hyväksyt sovelluksen käyttöehdot</string>
   <string name="trainer_info">Tietoa kouluttajasta</string>
   <string name="manual">Käyttöehdot</string>
+  <string name="already_registered">Joko rekisteröitynyt? Pääset kirjautumaan täältä</string>
 
-  <string name="login_logo">Login logo</string>
   <string name="title_activity_second">SecondActivity</string>
   <string name="luento_oppiminen">Luento: oppiminen</string>
   <string name="title_activity_third">ThirdActivity</string>

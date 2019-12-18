@@ -12,4 +12,5 @@
   <color name="trainingCalendar1">#FAAF00</color>
   <color name="calendarWeeks">#1491AF</color>
   <color name="calendarDays">#1500FF</color>
+  <color name="links">#1500FF</color>
 </resources>

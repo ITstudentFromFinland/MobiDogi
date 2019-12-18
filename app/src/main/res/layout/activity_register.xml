@@ -92,6 +92,7 @@
     android:id="@+id/tvManualLink"
     android:layout_width="wrap_content"
     android:text="@string/manual"
+    android:textColor="@color/links"
     android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal"
     android:layout_marginBottom="3dp"/>
@@ -100,6 +101,16 @@
     android:id="@+id/tvTrainerInfoLink"
     android:layout_width="wrap_content"
     android:text="@string/trainer_info"
+    android:textColor="@color/links"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="3dp"/>
+
+  <TextView
+    android:id="@+id/tvLogin"
+    android:layout_width="wrap_content"
+    android:text="@string/already_registered"
+    android:textColor="@color/links"
     android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal"/>
 

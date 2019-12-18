@@ -2,59 +2,89 @@ package com.example.mobidogi;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Login extends AppCompatActivity implements View.OnClickListener {
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.toolbox.Volley;
 
-  Button bLogin;
-  EditText etUsername, etPassword;
-  TextView tvManualLink, tvTrainerInfoLink;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-  UserLocalStore userLocalStore;
+public class Login extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_login);
 
-    etUsername = (EditText)findViewById(R.id.etUsername);
-    etPassword = (EditText)findViewById(R.id.etPassword);
-    bLogin = (Button)findViewById(R.id.bLogin);
-    tvManualLink = (TextView)findViewById(R.id.tvManualLink);
-    tvTrainerInfoLink = (TextView)findViewById(R.id.tvTrainerInfoLink);
+    final EditText etUsername = (EditText) findViewById(R.id.etUsername);
+    final EditText etPassword = (EditText) findViewById(R.id.etPassword);
+    final Button bLogin = (Button) findViewById(R.id.bLogin);
 
-    bLogin.setOnClickListener(this);
-    tvManualLink.setOnClickListener(this);
-    tvTrainerInfoLink.setOnClickListener(this);
+    bLogin.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        final String username = etUsername.getText().toString();
+        final String password = etPassword.getText().toString();
 
-    userLocalStore = new UserLocalStore(this);
-  }
-  @Override
-  public void onClick(View view) {
-    switch(view.getId()) {
-      case R.id.bLogin:
-        User user = new User(null, null);
+        Response.Listener<String> responseListener = new Response.Listener<String>() {
+          @Override
+          public void onResponse(String response) {
+            try {
+              JSONObject jsonResponse = new JSONObject(response);
+              boolean success = jsonResponse.getBoolean("success");
 
-        userLocalStore.storeUserData(user);
-        userLocalStore.setUserLoggedIn(true);
+              if (success) {
+                  Intent intent = new Intent(Login.this, MainActivity.class);
 
-        break;
+                  Login.this.startActivity(intent);
 
-      case R.id.tvManualLink:
+              } else {
+                AlertDialog.Builder builder = new AlertDialog.Builder(Login.this);
+                builder.setMessage("Kirjautuminen epäonnistui")
+                  .setNegativeButton("Yritä uudelleen", null)
+                  .create()
+                  .show();
+              }
 
-        startActivity(new Intent(this, Kayttoehdot.class));
+            } catch (JSONException e) {
+              e.printStackTrace();
+            }
 
-        break;
+          }
+        };
 
-      case R.id.tvTrainerInfoLink:
+        LoginRequest loginRequest = new LoginRequest(username, password, responseListener);
+        RequestQueue queue = Volley.newRequestQueue(Login.this);
+        queue.add(loginRequest);
+      }
+    });
 
-        startActivity(new Intent(this, TrainerInfo.class));
+    TextView tvManualLink = findViewById(R.id.tvManualLink);
+    TextView tvTrainerInfoLink = findViewById(R.id.tvTrainerInfoLink);
 
-        break;
-    }
+    tvManualLink.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+
+        Intent intManual = new Intent(Login.this, Kayttoehdot.class);
+        startActivity(intManual);
+      }
+    });
+
+    tvTrainerInfoLink.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+
+        Intent intInfo = new Intent(Login.this, TrainerInfo.class);
+        startActivity(intInfo);
+      }
+    });
   }
 }
