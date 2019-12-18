@@ -22,6 +22,15 @@
       android:paddingTop="1dp"
       tools:context="com.example.mobidogi.MainActivity">
 
+      <TextView
+        android:id="@+id/tvTrainerInfoLink"
+        android:layout_width="wrap_content"
+        android:text="@string/trainer_info"
+        android:textColor="@color/links"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"/>
+
       <Button
         android:contentDescription="@string/title_mitenkoiraoppii"
         android:id="@+id/simpleImageViewMitenKoiraOppii"
