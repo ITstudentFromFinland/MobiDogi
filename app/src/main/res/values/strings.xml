@@ -72,6 +72,8 @@
   <string name="add_event">Lisää treenimerkintä</string>
   <string name="show_event">Näytä treenimerkinnät</string>
 
+  <string name="billing_connection_failed">Yhteys maksuun on epäonnistunut</string>
+
   <string name="training_events">Laita ylös mikä treeni ja miten onnistui</string>
   <string name="add_training_event">Lisää treenimerkintä</string>
   <string name="enter_training_event">Kirjoita treenimerkintä</string>

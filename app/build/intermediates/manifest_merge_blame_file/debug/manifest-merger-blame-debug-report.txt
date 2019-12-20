@@ -224,33 +224,25 @@
 95-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:87:7-35
 96            android:label="MainActivity" />
 96-->C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:88:7-35
-97
-98        <provider
-98-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:23:9-27:43
-99            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
-99-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:24:13-83
-100            android:authorities="com.example.mobidogi.lifecycle-trojan"
-100-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:25:13-68
-101            android:exported="false"
-101-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:26:13-37
-102            android:multiprocess="true" />
-102-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:27:13-40
-103
-104        <meta-data
-104-->[com.android.billingclient:billing:2.1.0] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\fd44d29d1e1a6440cc5c4f0859b25205\billing-2.1.0\AndroidManifest.xml:13:9-15:37
-105            android:name="com.google.android.play.billingclient.version"
-105-->[com.android.billingclient:billing:2.1.0] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\fd44d29d1e1a6440cc5c4f0859b25205\billing-2.1.0\AndroidManifest.xml:14:13-73
-106            android:value="2.1.0" />
-106-->[com.android.billingclient:billing:2.1.0] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\fd44d29d1e1a6440cc5c4f0859b25205\billing-2.1.0\AndroidManifest.xml:15:13-34
-107
-108        <activity
-108-->[com.android.billingclient:billing:2.1.0] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\fd44d29d1e1a6440cc5c4f0859b25205\billing-2.1.0\AndroidManifest.xml:17:9-20:75
-109            android:name="com.android.billingclient.api.ProxyBillingActivity"
-109-->[com.android.billingclient:billing:2.1.0] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\fd44d29d1e1a6440cc5c4f0859b25205\billing-2.1.0\AndroidManifest.xml:18:13-78
-110            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-110-->[com.android.billingclient:billing:2.1.0] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\fd44d29d1e1a6440cc5c4f0859b25205\billing-2.1.0\AndroidManifest.xml:19:13-96
-111            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-111-->[com.android.billingclient:billing:2.1.0] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\fd44d29d1e1a6440cc5c4f0859b25205\billing-2.1.0\AndroidManifest.xml:20:13-72
-112    </application>
-113
-114</manifest>
+97        <activity
+97-->[com.android.billingclient:billing:1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\8f002285f3fadb2a61240856f034d595\billing-1.1\AndroidManifest.xml:13:9-16:75
+98            android:name="com.android.billingclient.api.ProxyBillingActivity"
+98-->[com.android.billingclient:billing:1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\8f002285f3fadb2a61240856f034d595\billing-1.1\AndroidManifest.xml:14:13-78
+99            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+99-->[com.android.billingclient:billing:1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\8f002285f3fadb2a61240856f034d595\billing-1.1\AndroidManifest.xml:15:13-96
+100            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+100-->[com.android.billingclient:billing:1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\8f002285f3fadb2a61240856f034d595\billing-1.1\AndroidManifest.xml:16:13-72
+101
+102        <provider
+102-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:23:9-27:43
+103            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
+103-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:24:13-83
+104            android:authorities="com.example.mobidogi.lifecycle-trojan"
+104-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:25:13-68
+105            android:exported="false"
+105-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:26:13-37
+106            android:multiprocess="true" />
+106-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:27:13-40
+107    </application>
+108
+109</manifest>
