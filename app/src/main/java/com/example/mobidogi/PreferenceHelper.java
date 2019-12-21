@@ -52,8 +52,8 @@ public class PreferenceHelper {
     }
   }
 
-  public static void setSendVideo(boolean SendVidePaidFor) {
-    if (SendVidePaidFor) {
+  public static void setSendVideo(boolean SendVideoPaidFor) {
+    if (SendVideoPaidFor) {
       mSendVideo = true;
     } else {
       mSendVideo = false;
