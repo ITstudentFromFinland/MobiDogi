@@ -5,7 +5,9 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -16,6 +18,7 @@ import android.widget.Toast;
 import com.android.billingclient.api.BillingClient;
 import com.android.billingclient.api.BillingClientStateListener;
 import com.android.billingclient.api.BillingFlowParams;
+import com.android.billingclient.api.Purchase;
 import com.android.billingclient.api.PurchasesUpdatedListener;
 import com.android.billingclient.api.SkuDetails;
 import com.android.billingclient.api.SkuDetailsParams;
@@ -25,10 +28,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.android.billingclient.api.BillingClient.SkuType.INAPP;
+import static com.example.mobidogi.PreferenceHelper.setLenkkeily;
+import static com.example.mobidogi.PreferenceHelper.setLuoksetulo;
+import static com.example.mobidogi.PreferenceHelper.setHairitsevakaytos;
+import static com.example.mobidogi.PreferenceHelper.setHoitotoimenpiteet;
+import static com.example.mobidogi.PreferenceHelper.setYksinolo;
 
 
 public class MainActivity extends AppCompatActivity implements PurchasesUpdatedListener {
   TextView mTextMessage;
+
+  private static final String TAG = "MainActivity";
 
   static final String ITEM_SKU_LENKKEILY = "mobidogi.lenkkeily";
   static final String ITEM_SKU_LUOKSETULO = "mobidogi.luoksetulo";
@@ -36,7 +46,6 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
   static final String ITEM_SKU_HOITOTOIMENPITEET = "mobidogi.hoitotoimenpiteet";
   static final String ITEM_SKU_YKSINOLO = "mobidogi.yksinolo";
 
-  private static final String TAG = "MainActivity";
   private String mLenkkeilyPrice;
   private String mLuoksetuloPrice;
   private String mHairitsevakaytosPrice;
@@ -58,6 +67,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
       @Override
       public void onBillingSetupFinished(@BillingClient.BillingResponse int billingResponseCode) {
         if (billingResponseCode == BillingClient.BillingResponse.OK) {
+
           List skuList = new ArrayList<>();
           skuList.add(ITEM_SKU_LENKKEILY);
           skuList.add(ITEM_SKU_LUOKSETULO);
@@ -68,11 +78,11 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
           params.setSkusList(skuList).setType(INAPP);
           mBillingClient.querySkuDetailsAsync(params.build(), new SkuDetailsResponseListener() {
             @Override
-            public void onSkuDetailsResponse(int responseCode, List SkuDetailsList) {
-              //Process the result
+            public void onSkuDetailsResponse(int responseCode, List skuDetailsList) {
+              //process the result.
 
-              if (responseCode == BillingClient.BillingResponse.OK && SkuDetailsList != null) {
-                for (Object skuDetailsObject : SkuDetailsList) {
+              if (responseCode == BillingClient.BillingResponse.OK && skuDetailsList != null) {
+                for (Object skuDetailsObject : skuDetailsList) {
                   SkuDetails skuDetails = (SkuDetails) skuDetailsObject;
                   String sku = skuDetails.getSku();
                   String price = skuDetails.getPrice();
@@ -96,7 +106,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
 
       @Override
       public void onBillingServiceDisconnected() {
-        //TODO implement your own retry policy
+        //TODO: implement your own retry policy
         Toast.makeText(MainActivity.this, getResources().getString(R.string.billing_connection_failed), Toast.LENGTH_SHORT);
         // Try to restart the connection on the next request to
         // Google Play by calling the startConnection() method.
@@ -134,10 +144,6 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
     TextView tvTrainerInfo = findViewById(R.id.tvTrainerInfoLink);
     Button MitenKoiraOppii = findViewById(R.id.simpleImageViewMitenKoiraOppii);
     Button Lenkkeily = findViewById(R.id.simpleImageViewLenkkeily);
-    Button Luoksetulo = findViewById(R.id.simpleImageViewLuoksetulo);
-    Button HairitsevaKaytos = findViewById(R.id.simpleImageViewHairitsevaKaytos);
-    Button Hoitotoimenpiteet = findViewById(R.id.simpleImageViewHoitotoimenpiteet);
-    Button Yksinolo = findViewById(R.id.simpleImageViewYksinolo);
 
     tvTrainerInfo.setOnClickListener(new View.OnClickListener() {
       @Override
@@ -161,25 +167,52 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
     Lenkkeily.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
+
         BillingFlowParams flowParams = BillingFlowParams.newBuilder()
           .setSku(ITEM_SKU_LENKKEILY)
-          .setType(BillingClient.SkuType.INAPP)
+          .setType(INAPP)
           .build();
 
         int responseCode = mBillingClient.launchBillingFlow(MainActivity.this, flowParams);
 
-        Intent int2 = new Intent(MainActivity.this, LenkkeilyValikkoActivity.class);
-        startActivity(int2);
       }
     });
+  }
+
+  private void handlePurchases(Purchase purchase) {
+    if (purchase.getSku().equals(ITEM_SKU_LENKKEILY)) {
+      mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_lenkkeily), true).commit();
+      setLenkkeily(true);
+    }
+  }
+
+  @Override
+  public void onPurchasesUpdated(int responseCode, @Nullable List<com.android.billingclient.api.Purchase> purchases) {
+
+    if (responseCode == BillingClient.BillingResponse.OK && purchases != null) {
+      for (Purchase purchase : purchases) {
+        handlePurchases(purchase);
+      }
+    } else if (responseCode == BillingClient.BillingResponse.USER_CANCELED) {
+      Log.d(TAG, "Ostos peruttu" + responseCode);
+    } else if (responseCode == BillingClient.BillingResponse.ITEM_ALREADY_OWNED) {
+      mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_lenkkeily), true).commit();
+      setLenkkeily(true);
+    } else {
+      Log.d(TAG, "muu ostos" + responseCode);
+
+    }
+
+        Button Luoksetulo = findViewById(R.id.simpleImageViewLuoksetulo);
 
         Luoksetulo.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
             Intent int3 = new Intent(MainActivity.this, LuoksetuloValikkoActivity.class);
             startActivity(int3);
-          }
-        });
+          }});
+
+        Button HairitsevaKaytos = findViewById(R.id.simpleImageViewHairitsevaKaytos);
 
         HairitsevaKaytos.setOnClickListener(new View.OnClickListener() {
           @Override
@@ -189,6 +222,8 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
           }
         });
 
+        Button Hoitotoimenpiteet = findViewById(R.id.simpleImageViewHoitotoimenpiteet);
+
         Hoitotoimenpiteet.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
@@ -196,6 +231,8 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
             startActivity(int4);
           }
         });
+
+        Button Yksinolo = findViewById(R.id.simpleImageViewYksinolo);
 
         Yksinolo.setOnClickListener(new View.OnClickListener() {
           @Override

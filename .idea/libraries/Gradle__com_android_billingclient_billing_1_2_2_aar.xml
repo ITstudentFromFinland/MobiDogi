@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.billingclient:billing:1.2.2@aar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/3faaaee6eda5f48064a5a1a0a97d5408/billing-1.2.2/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/3faaaee6eda5f48064a5a1a0a97d5408/billing-1.2.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/3faaaee6eda5f48064a5a1a0a97d5408/billing-1.2.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.android.billingclient/billing/1.2.2/9b0a20dac6b80a3ce44ee3c2827a8c307516df93/billing-1.2.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.android.billingclient/billing/1.2.2/53278831f373d21ed7d15cda6f81c0d1978fa788/billing-1.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
