@@ -1575,6 +1575,7 @@ string aloita_kuvaus
 string already_registered
 string app_name
 string appbar_scrolling_view_behavior
+string billing_connection_failed
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
@@ -1599,6 +1600,7 @@ string name
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string omistajastapois_ohje
+string ostettu
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

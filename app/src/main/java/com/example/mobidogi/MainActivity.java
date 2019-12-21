@@ -174,7 +174,6 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
           .build();
 
         int responseCode = mBillingClient.launchBillingFlow(MainActivity.this, flowParams);
-
       }
     });
   }
@@ -183,6 +182,21 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
     if (purchase.getSku().equals(ITEM_SKU_LENKKEILY)) {
       mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_lenkkeily), true).commit();
       setLenkkeily(true);
+    }
+    else if (purchase.getSku().equals(ITEM_SKU_LUOKSETULO)) {
+      mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_luoksetulo), true).commit();
+      setLuoksetulo(true);
+    }
+    else if (purchase.getSku().equals(ITEM_SKU_HAIRITSEVAKAYTOS)) {
+      mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_hairitseva_kaytos), true).commit();
+      setHairitsevakaytos(true);
+    }
+    else if (purchase.getSku().equals(ITEM_SKU_HOITOTOIMENPITEET)) {
+      mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_hoitotoimenpiteet), true).commit();
+      setHoitotoimenpiteet(true);
+    } else if (purchase.getSku().equals(ITEM_SKU_YKSINOLO)) {
+      mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_yksinolo), true).commit();
+      setYksinolo(true);
     }
   }
 
@@ -196,7 +210,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
     } else if (responseCode == BillingClient.BillingResponse.USER_CANCELED) {
       Log.d(TAG, "Ostos peruttu" + responseCode);
     } else if (responseCode == BillingClient.BillingResponse.ITEM_ALREADY_OWNED) {
-      mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_lenkkeily), true).commit();
+      mSharedPreferences.edit().putBoolean(getResources().getString(R.string.ostettu), true).commit();
       setLenkkeily(true);
     } else {
       Log.d(TAG, "muu ostos" + responseCode);
@@ -208,8 +222,13 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
         Luoksetulo.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
-            Intent int3 = new Intent(MainActivity.this, LuoksetuloValikkoActivity.class);
-            startActivity(int3);
+
+            BillingFlowParams flowParams = BillingFlowParams.newBuilder()
+              .setSku(ITEM_SKU_LUOKSETULO)
+              .setType(INAPP)
+              .build();
+
+            int responseCode = mBillingClient.launchBillingFlow(MainActivity.this, flowParams);
           }});
 
         Button HairitsevaKaytos = findViewById(R.id.simpleImageViewHairitsevaKaytos);
@@ -217,8 +236,13 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
         HairitsevaKaytos.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
-            Intent intHK = new Intent(MainActivity.this, HairitsevaKaytosValikko.class);
-            startActivity(intHK);
+
+            BillingFlowParams flowParams = BillingFlowParams.newBuilder()
+              .setSku(ITEM_SKU_HAIRITSEVAKAYTOS)
+              .setType(INAPP)
+              .build();
+
+            int responseCode = mBillingClient.launchBillingFlow(MainActivity.this, flowParams);
           }
         });
 
@@ -227,8 +251,13 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
         Hoitotoimenpiteet.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
-            Intent int4 = new Intent(MainActivity.this, HoitotoimenpiteetValikko.class);
-            startActivity(int4);
+
+            BillingFlowParams flowParams = BillingFlowParams.newBuilder()
+              .setSku(ITEM_SKU_HOITOTOIMENPITEET)
+              .setType(INAPP)
+              .build();
+
+            int responseCode = mBillingClient.launchBillingFlow(MainActivity.this, flowParams);
           }
         });
 
@@ -237,8 +266,13 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
         Yksinolo.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
-            Intent int5 = new Intent(MainActivity.this, YksinoloValikkoActivity.class);
-            startActivity(int5);
+
+            BillingFlowParams flowParams = BillingFlowParams.newBuilder()
+              .setSku(ITEM_SKU_YKSINOLO)
+              .setType(INAPP)
+              .build();
+
+            int responseCode = mBillingClient.launchBillingFlow(MainActivity.this, flowParams);
           }
         });
       }

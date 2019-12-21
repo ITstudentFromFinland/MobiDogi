@@ -87,6 +87,6 @@
     sen ja vanhat merkinnät. Yksittäisten näyttäminen ei valitettavasti ole mahdollista. Huomioithan, että merkintöjä voi olla vain yksi per päiväys,
     joten jos treenejä on päivässä useampi, merkitsethän ne samaan merkintään.</string>
 
-  <string name="lenkkeily_ostettu">Lenkkeily-osio ostettu</string>
+  <string name="ostettu">Olet jo ostanut tämän tuotteen</string>
 
 </resources>
