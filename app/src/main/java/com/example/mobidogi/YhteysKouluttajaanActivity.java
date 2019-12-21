@@ -1,14 +1,18 @@
 package com.example.mobidogi;
 
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.media.session.MediaSession;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Toast;
 
@@ -80,7 +84,18 @@ public class YhteysKouluttajaanActivity extends AppCompatActivity implements Pur
       @Override
       public void onBillingServiceDisconnected() {
 
-        Toast.makeText(YhteysKouluttajaanActivity.this, getResources().getString(R.string.billing_connection_failed), Toast.LENGTH_SHORT);
+        AlertDialog.Builder builder2 = new AlertDialog.Builder(YhteysKouluttajaanActivity.this);
+        builder2.setMessage("yhteysongelma")
+          .setCancelable(false)
+          .setPositiveButton("yritä uudelleen", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+              dialog.cancel();
+            }
+          });
+
+        AlertDialog alert = builder2.create();
+        alert.show();
       }
     });
   }
@@ -143,10 +158,28 @@ public class YhteysKouluttajaanActivity extends AppCompatActivity implements Pur
   }
 
   private void handlePurchases(Purchase purchase) {
-   if (purchase.getSku().equals(ITEM_SKU_LAHETYS)) {
-     mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_dashboard), true).commit();
-     setSendVideo(true);
-   }
+    if (purchase.getSku().equals(ITEM_SKU_LAHETYS)) {
+      mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_dashboard), true).commit();
+      setSendVideo(true);
+
+
+      ConsumeResponseListener listener = new ConsumeResponseListener() {
+        @Override
+        public void onConsumeResponse(@BillingClient.BillingResponse int responseCode, String outToken) {
+          if (responseCode == BillingClient.BillingResponse.OK) {
+            handlePurchases(purchase);
+          } else if (responseCode == BillingClient.BillingResponse.USER_CANCELED) {
+            Log.d(TAG, "peruttu" + responseCode);
+          } else {
+            AlertDialog.Builder builder = new AlertDialog.Builder(YhteysKouluttajaanActivity.this, R.style.Widget_AppCompat_ButtonBar_AlertDialog);
+            builder.setMessage("maksu ei onnistu");
+            builder.setCancelable(true);
+          }
+        }
+      };
+
+      mBillingClient.consumeAsync(purchase.getPurchaseToken(), listener);
+    }
     }
   }
 
