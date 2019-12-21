@@ -57,5 +57,3 @@
     android:onClick="shareVideo"/>
 
 </RelativeLayout>
-
-

@@ -7,6 +7,7 @@ public class PreferenceHelper {
   private static boolean mHairitsevakaytos;
   private static boolean mHoitotoimenpiteet;
   private static boolean mYksinolo;
+  private static boolean mSendVideo;
 
   private PreferenceHelper() {
   }
@@ -48,6 +49,14 @@ public class PreferenceHelper {
       mYksinolo = true;
     } else {
       mYksinolo = false;
+    }
+  }
+
+  public static void setSendVideo(boolean SendVidePaidFor) {
+    if (SendVidePaidFor) {
+      mSendVideo = true;
+    } else {
+      mSendVideo = false;
     }
   }
 
