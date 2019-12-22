@@ -241,25 +241,30 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
       private void handlePurchases(Purchase purchase) {
         if (purchase.getSku().equals(ITEM_SKU_LENKKEILY)) {
           mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_lenkkeily), true).commit();
+          setLenkkeily(true);
           Intent lenkkeily = new Intent(MainActivity.this, LenkkeilyValikkoActivity.class);
           startActivity(lenkkeily);
         }
         else if (purchase.getSku().equals(ITEM_SKU_LUOKSETULO)) {
           mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_luoksetulo), true).commit();
+          setLuoksetulo(true);
           Intent luoksetulo = new Intent(MainActivity.this, LuoksetuloValikkoActivity.class);
           startActivity(luoksetulo);
         }
         else if (purchase.getSku().equals(ITEM_SKU_HAIRITSEVAKAYTOS)) {
           mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_hairitseva_kaytos), true).commit();
+          setHairitsevakaytos(true);
           Intent hairitseva = new Intent(MainActivity.this, HairitsevaKaytosValikko.class);
           startActivity(hairitseva);
         }
         else if (purchase.getSku().equals(ITEM_SKU_HOITOTOIMENPITEET)) {
           mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_hoitotoimenpiteet), true).commit();
+          setHoitotoimenpiteet(true);
           Intent hoito = new Intent(MainActivity.this, HoitotoimenpiteetValikko.class);
           startActivity(hoito);
         } else if (purchase.getSku().equals(ITEM_SKU_YKSINOLO)) {
           mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_yksinolo), true).commit();
+          setYksinolo(true);
           Intent yksin = new Intent(MainActivity.this, YksinoloValikkoActivity.class);
           startActivity(yksin);
         }
