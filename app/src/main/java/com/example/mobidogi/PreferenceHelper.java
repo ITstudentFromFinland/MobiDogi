@@ -59,22 +59,4 @@ public class PreferenceHelper {
       mSendVideo = false;
     }
   }
-
-  public static boolean getLenkkeily() {
-    return mLenkkeily;
-  }
-
-  public static boolean getLuoksetulo() {
-    return mLuoksetulo;
-  }
-  public static boolean getHairitsevakaytos() {
-    return mHairitsevakaytos;
-  }
-
-  public static boolean getHoitotoimenpiteet() {
-    return mHoitotoimenpiteet;
-  }
-  public static boolean getYksinolo() {
-    return mYksinolo;
-  }
 }
