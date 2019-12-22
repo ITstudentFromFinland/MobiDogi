@@ -33,7 +33,6 @@
   <string name="prompt_password">Salasana</string>
   <string name="register">Rekisteröidy</string>
   <string name="action_sign_in_short">Kirjaudu</string>
-  <string name="welcome">"Tervetuloa !"</string>
   <string name="invalid_username">Not a valid username</string>
   <string name="login_failed">"Kirjautuminen epäonnistui"</string>
   <string name="policy_settings">Rekisteröityessäsi hyväksyt sovelluksen käyttöehdot</string>
@@ -49,9 +48,7 @@
   <string name="omistajastapois_ohje">Omistajasta pois</string>
   <string name="rauhoittuminen_ohje">Rauhoittuminen</string>
   <string name="lahellapysyminen_ohje">Lähellä pysyminen</string>
-  <string name="title_activity_test">TestActivity</string>
   <string name="title_activity_ehdollistaminen_ohje_pdf">EhdollistaminenOhjePDF</string>
-  <string name="title_activity_view">ViewActivity</string>
   <string name="title_activity_hihnan_kirous">HihnanKirousActivity</string>
   <string name="title_activity_luoksetulo_valikko">LuoksetuloValikkoActivity</string>
   <string name="title_hoitotoimenpiteet_valikko">Luento: Hoitotoimenpiteet</string>
@@ -69,15 +66,7 @@
   <string name="tarkista_kuvaus">Tarkista video</string>
   <string name="laheta_video">Lähetä</string>
 
-  <string name="add_event">Lisää treenimerkintä</string>
-  <string name="show_event">Näytä treenimerkinnät</string>
-
   <string name="billing_connection_failed">Yhteys maksuun on epäonnistunut</string>
-
-  <string name="training_events">Laita ylös mikä treeni ja miten onnistui</string>
-  <string name="add_training_event">Lisää treenimerkintä</string>
-  <string name="enter_training_event">Kirjoita treenimerkintä</string>
-  <string name="submit_training_event">Tallenna treenimerkintä</string>
 
   <string name="Load">Näytä treenimerkinnät</string>
   <string name="Add">Lisää treenimerkintä</string>
