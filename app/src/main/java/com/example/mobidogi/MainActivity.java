@@ -176,46 +176,6 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
         int responseCode = mBillingClient.launchBillingFlow(MainActivity.this, flowParams);
       }
     });
-  }
-
-  private void handlePurchases(Purchase purchase) {
-    if (purchase.getSku().equals(ITEM_SKU_LENKKEILY)) {
-      mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_lenkkeily), true).commit();
-      setLenkkeily(true);
-    }
-    else if (purchase.getSku().equals(ITEM_SKU_LUOKSETULO)) {
-      mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_luoksetulo), true).commit();
-      setLuoksetulo(true);
-    }
-    else if (purchase.getSku().equals(ITEM_SKU_HAIRITSEVAKAYTOS)) {
-      mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_hairitseva_kaytos), true).commit();
-      setHairitsevakaytos(true);
-    }
-    else if (purchase.getSku().equals(ITEM_SKU_HOITOTOIMENPITEET)) {
-      mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_hoitotoimenpiteet), true).commit();
-      setHoitotoimenpiteet(true);
-    } else if (purchase.getSku().equals(ITEM_SKU_YKSINOLO)) {
-      mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_yksinolo), true).commit();
-      setYksinolo(true);
-    }
-  }
-
-  @Override
-  public void onPurchasesUpdated(int responseCode, @Nullable List<com.android.billingclient.api.Purchase> purchases) {
-
-    if (responseCode == BillingClient.BillingResponse.OK && purchases != null) {
-      for (Purchase purchase : purchases) {
-        handlePurchases(purchase);
-      }
-    } else if (responseCode == BillingClient.BillingResponse.USER_CANCELED) {
-      Log.d(TAG, "Ostos peruttu" + responseCode);
-    } else if (responseCode == BillingClient.BillingResponse.ITEM_ALREADY_OWNED) {
-      mSharedPreferences.edit().putBoolean(getResources().getString(R.string.ostettu), true).commit();
-      setLenkkeily(true);
-    } else {
-      Log.d(TAG, "muu ostos" + responseCode);
-
-    }
 
         Button Luoksetulo = findViewById(R.id.simpleImageViewLuoksetulo);
 
@@ -229,7 +189,8 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
               .build();
 
             int responseCode = mBillingClient.launchBillingFlow(MainActivity.this, flowParams);
-          }});
+          }
+        });
 
         Button HairitsevaKaytos = findViewById(R.id.simpleImageViewHairitsevaKaytos);
 
@@ -265,15 +226,55 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
 
         Yksinolo.setOnClickListener(new View.OnClickListener() {
           @Override
-          public void onClick(View v) {
+          public void onClick(View v){
 
-            BillingFlowParams flowParams = BillingFlowParams.newBuilder()
-              .setSku(ITEM_SKU_YKSINOLO)
-              .setType(INAPP)
-              .build();
+      BillingFlowParams flowParams = BillingFlowParams.newBuilder()
+        .setSku(ITEM_SKU_YKSINOLO)
+        .setType(INAPP)
+        .build();
 
-            int responseCode = mBillingClient.launchBillingFlow(MainActivity.this, flowParams);
-          }
-        });
+      int responseCode = mBillingClient.launchBillingFlow(MainActivity.this, flowParams);
+
+    }});
+  }
+
+      private void handlePurchases(Purchase purchase) {
+        if (purchase.getSku().equals(ITEM_SKU_LENKKEILY)) {
+          mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_lenkkeily), true).commit();
+          setLenkkeily(true);
+        }
+        else if (purchase.getSku().equals(ITEM_SKU_LUOKSETULO)) {
+          mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_luoksetulo), true).commit();
+          setLuoksetulo(true);
+        }
+        else if (purchase.getSku().equals(ITEM_SKU_HAIRITSEVAKAYTOS)) {
+          mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_hairitseva_kaytos), true).commit();
+          setHairitsevakaytos(true);
+        }
+        else if (purchase.getSku().equals(ITEM_SKU_HOITOTOIMENPITEET)) {
+          mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_hoitotoimenpiteet), true).commit();
+          setHoitotoimenpiteet(true);
+        } else if (purchase.getSku().equals(ITEM_SKU_YKSINOLO)) {
+          mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_yksinolo), true).commit();
+          setYksinolo(true);
+        }
       }
-}
+
+      @Override
+      public void onPurchasesUpdated(int responseCode, @Nullable List<com.android.billingclient.api.Purchase> purchases) {
+
+        if (responseCode == BillingClient.BillingResponse.OK && purchases != null) {
+          for (Purchase purchase : purchases) {
+            handlePurchases(purchase);
+          }
+        } else if (responseCode == BillingClient.BillingResponse.USER_CANCELED) {
+          Log.d(TAG, "Ostos peruttu" + responseCode);
+        } else if (responseCode == BillingClient.BillingResponse.ITEM_ALREADY_OWNED) {
+          mSharedPreferences.edit().putBoolean(getResources().getString(R.string.ostettu), true).commit();
+          setLenkkeily(true);
+        } else {
+          Log.d(TAG, "muu ostos" + responseCode);
+
+          }
+        }
+      }
