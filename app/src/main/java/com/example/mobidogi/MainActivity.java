@@ -106,10 +106,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
 
       @Override
       public void onBillingServiceDisconnected() {
-        //TODO: implement your own retry policy
         Toast.makeText(MainActivity.this, getResources().getString(R.string.billing_connection_failed), Toast.LENGTH_SHORT);
-        // Try to restart the connection on the next request to
-        // Google Play by calling the startConnection() method.
 
       }
     });
