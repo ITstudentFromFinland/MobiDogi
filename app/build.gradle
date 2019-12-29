@@ -11,7 +11,7 @@ android {
     }
   compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.mobidogi"
+        applicationId "com.mobidogisovellus.mobidogi"
         minSdkVersion 26
         targetSdkVersion 28
         versionCode 1
@@ -23,7 +23,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            debuggable true
+            debuggable false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
