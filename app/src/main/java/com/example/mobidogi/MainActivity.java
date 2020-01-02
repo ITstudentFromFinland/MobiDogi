@@ -171,7 +171,11 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
           .build();
 
         int responseCode = mBillingClient.launchBillingFlow(MainActivity.this, flowParams);
-      }
+
+        if (responseCode == BillingClient.BillingResponse.ITEM_ALREADY_OWNED) {
+          Intent lenkkeilypaid = new Intent(MainActivity.this, LenkkeilyValikkoActivity.class);
+          startActivity(lenkkeilypaid);
+      }}
     });
 
         Button Luoksetulo = findViewById(R.id.simpleImageViewLuoksetulo);
@@ -186,7 +190,11 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
               .build();
 
             int responseCode = mBillingClient.launchBillingFlow(MainActivity.this, flowParams);
-          }
+
+            if (responseCode == BillingClient.BillingResponse.ITEM_ALREADY_OWNED) {
+              Intent luoksepaid = new Intent(MainActivity.this, LuoksetuloValikkoActivity.class);
+              startActivity(luoksepaid);
+          }}
         });
 
         Button HairitsevaKaytos = findViewById(R.id.simpleImageViewHairitsevaKaytos);
@@ -201,6 +209,11 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
               .build();
 
             int responseCode = mBillingClient.launchBillingFlow(MainActivity.this, flowParams);
+
+            if (responseCode == BillingClient.BillingResponse.ITEM_ALREADY_OWNED) {
+              Intent hairitsevapaid = new Intent(MainActivity.this, HairitsevaKaytosValikko.class);
+              startActivity(hairitsevapaid);
+            }
           }
         });
 
@@ -216,6 +229,11 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
               .build();
 
             int responseCode = mBillingClient.launchBillingFlow(MainActivity.this, flowParams);
+
+            if (responseCode == BillingClient.BillingResponse.ITEM_ALREADY_OWNED) {
+              Intent hoitopaid = new Intent(MainActivity.this, HoitotoimenpiteetValikko.class);
+              startActivity(hoitopaid);
+            }
           }
         });
 
@@ -232,7 +250,11 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
 
       int responseCode = mBillingClient.launchBillingFlow(MainActivity.this, flowParams);
 
-    }});
+            if (responseCode == BillingClient.BillingResponse.ITEM_ALREADY_OWNED) {
+              Intent yksinolopaid = new Intent(MainActivity.this, YksinoloValikkoActivity.class);
+              startActivity(yksinolopaid);
+            }
+        }});
   }
 
       private void handlePurchases(Purchase purchase) {
