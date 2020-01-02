@@ -2,7 +2,6 @@ package com.example.mobidogi;
 
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
-import android.media.session.MediaSession;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
@@ -12,9 +11,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Toast;
 
 import com.android.billingclient.api.BillingClient;
 import com.android.billingclient.api.BillingClientStateListener;
@@ -122,15 +119,7 @@ public class YhteysKouluttajaanActivity extends AppCompatActivity implements Pur
       .build();
 
     int responseCode = mBillingClient.launchBillingFlow(YhteysKouluttajaanActivity.this, flowParams);
-
-    Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "mobidogisovellus@gmail.com", null));
-    emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Ongelmani");
-    emailIntent.putExtra(Intent.EXTRA_TEXT, "Tarvitsisin apua seuraavaan ongelmaan");
-    emailIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse(videoUri.toString()));
-    if (emailIntent.resolveActivity(getPackageManager()) != null) {
-      startActivity(emailIntent);
     }
-  }
 
   @Override
   protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -162,6 +151,13 @@ public class YhteysKouluttajaanActivity extends AppCompatActivity implements Pur
       mSharedPreferences.edit().putBoolean(getResources().getString(R.string.title_dashboard), true).commit();
       setSendVideo(true);
 
+      Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "mobidogisovellus@gmail.com", null));
+      emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Ongelmani");
+      emailIntent.putExtra(Intent.EXTRA_TEXT, "Tarvitsisin apua seuraavaan ongelmaan");
+      emailIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse(videoUri.toString()));
+      if (emailIntent.resolveActivity(getPackageManager()) != null) {
+        startActivity(emailIntent);
+
 
       ConsumeResponseListener listener = new ConsumeResponseListener() {
         @Override
@@ -180,6 +176,6 @@ public class YhteysKouluttajaanActivity extends AppCompatActivity implements Pur
 
       mBillingClient.consumeAsync(purchase.getPurchaseToken(), listener);
     }
-    }
+    }}
   }
 
