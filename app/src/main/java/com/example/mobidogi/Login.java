@@ -53,57 +53,6 @@ public class Login extends AppCompatActivity {
         }
       }
     });
-  }
-
-  private void initViews() {
-
-    etUsername = (EditText) findViewById(R.id.etUsername);
-    etPassword = (EditText) findViewById(R.id.etPassword);
-    bLogin = (Button) findViewById(R.id.bLogin);
-
-  }
-
-  @SuppressWarnings("deprecation")
-    public static Spanned fromHtml(String html) {
-    Spanned result;
-    if (Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
-      result = Html.fromHtml(html, Html.FROM_HTML_MODE_LEGACY);
-    } else {
-      result = Html.fromHtml(html);
-    }
-    return result;
-    }
-
-    public boolean validate() {
-      boolean valid = false;
-
-      String Email = etUsername.getText().toString();
-      String Password = etPassword.getText().toString();
-
-      if (!Patterns.EMAIL_ADDRESS.matcher(Email).matches()) {
-        valid = false;
-        Snackbar.make(bLogin, "Anna oikea sähköposti", Snackbar.LENGTH_SHORT).show();
-      } else {
-        valid = true;
-        Snackbar.make(bLogin, null, Snackbar.LENGTH_INDEFINITE);
-      }
-
-      if (Password.isEmpty()) {
-        valid = false;
-        Snackbar.make(bLogin, "Anna oikea salasana", Snackbar.LENGTH_SHORT).show();
-      } else {
-        if (Password.length() > 5) {
-          valid = true;
-          Snackbar.make(bLogin, null, Snackbar.LENGTH_INDEFINITE);
-        } else {
-          valid = false;
-          Snackbar.make(bLogin, "Salasana on liian lyhyt", Snackbar.LENGTH_SHORT).show();
-        }
-      }
-
-      return valid;
-  }
-
 
   TextView tvManualLink = findViewById(R.id.tvManualLink);
   TextView tvTrainerInfoLink = findViewById(R.id.tvTrainerInfoLink);
@@ -126,4 +75,53 @@ public class Login extends AppCompatActivity {
     }
   });
 }
+
+  private void initViews() {
+
+    etUsername = (EditText) findViewById(R.id.etUsername);
+    etPassword = (EditText) findViewById(R.id.etPassword);
+    bLogin = (Button) findViewById(R.id.bLogin);
+
+  }
+
+  @SuppressWarnings("deprecation")
+  public static Spanned fromHtml(String html) {
+    Spanned result;
+    if (Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+      result = Html.fromHtml(html, Html.FROM_HTML_MODE_LEGACY);
+    } else {
+      result = Html.fromHtml(html);
+    }
+    return result;
+  }
+
+  public boolean validate() {
+    boolean valid = false;
+
+    String Email = etUsername.getText().toString();
+    String Password = etPassword.getText().toString();
+
+    if (!Patterns.EMAIL_ADDRESS.matcher(Email).matches()) {
+      valid = false;
+      Snackbar.make(bLogin, "Anna oikea sähköposti", Snackbar.LENGTH_SHORT).show();
+    } else {
+      valid = true;
+      Snackbar.make(bLogin, null, Snackbar.LENGTH_INDEFINITE);
+    }
+
+    if (Password.isEmpty()) {
+      valid = false;
+      Snackbar.make(bLogin, "Anna oikea salasana", Snackbar.LENGTH_SHORT).show();
+    } else {
+      if (Password.length() > 5) {
+        valid = true;
+        Snackbar.make(bLogin, null, Snackbar.LENGTH_INDEFINITE);
+      } else {
+        valid = false;
+        Snackbar.make(bLogin, "Salasana on liian lyhyt", Snackbar.LENGTH_SHORT).show();
+      }
+    }
+
+    return valid;
+  }
 }
