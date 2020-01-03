@@ -57,7 +57,7 @@ public class Register extends AppCompatActivity {
               } else {
                 AlertDialog.Builder builder = new AlertDialog.Builder(Register.this);
                 builder.setMessage("Rekisteröityminen epäonnistui")
-                  .setNegativeButton("Yritä uudesaan", null)
+                  .setNegativeButton("Yritä uudestaan", null)
                   .create()
                   .show();
               }
