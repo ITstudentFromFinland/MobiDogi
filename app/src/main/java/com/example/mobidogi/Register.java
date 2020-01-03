@@ -1,6 +1,8 @@
 package com.example.mobidogi;
 
 import android.content.Intent;
+import android.os.Handler;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,89 +20,100 @@ import org.json.JSONObject;
 
 public class Register extends AppCompatActivity {
 
+  EditText etName;
+  EditText etAge;
+  EditText etUsername;
+  EditText etPassword;
+  EditText etDogName;
+  EditText etRotu;
+
+  Button bRegister;
+
+  UsersDBHelper usersDbHelper;
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_register);
-
-    final EditText etName = (EditText) findViewById(R.id.etName);
-    final EditText etUsername = (EditText) findViewById(R.id.etUsername);
-    final EditText etPassword = (EditText) findViewById(R.id.etPassword);
-    final EditText etAge = (EditText) findViewById(R.id.etAge);
-    final EditText etDogName = (EditText) findViewById(R.id.etDogName);
-    final EditText etRotu = (EditText) findViewById(R.id.etRotu);
-
-    final Button bRegister = (Button) findViewById(R.id.bRegister);
-
+    usersDbHelper = new UsersDBHelper(this);
+    initViews();
     bRegister.setOnClickListener(new View.OnClickListener() {
 
       @Override
       public void onClick(View view) {
-        String name = etName.getText().toString();
-        String username = etUsername.getText().toString();
-        String password = etPassword.getText().toString();
-        int age = Integer.parseInt(etAge.getText().toString());
-        String dogname = etDogName.getText().toString();
-        String rotu = etRotu.getText().toString();
+        if (validate()) {
+          String username = etUsername.getText().toString();
+          String password = etPassword.getText().toString();
 
-        Response.Listener<String> responseListener = new Response.Listener<String>() {
+          if (!usersDbHelper.isEmailExists(username)) {
 
-          @Override
-          public void onResponse(String response) {
-            try {
-              JSONObject jsonObject = new JSONObject(response.substring(response.indexOf("{"), response.lastIndexOf("}") + 1));
-              boolean success = jsonObject.getBoolean("success");
-
-              if (success) {
-                Intent intent = new Intent(Register.this, Login.class);
-                Register.this.startActivity(intent);
-              } else {
-                AlertDialog.Builder builder = new AlertDialog.Builder(Register.this);
-                builder.setMessage("Rekisteröityminen epäonnistui")
-                  .setNegativeButton("Yritä uudestaan", null)
-                  .create()
-                  .show();
+            usersDbHelper.addUser(new User(null, null, username, password));
+            Snackbar.make(bRegister, "Tunnukset luotu onnistuneesti. Voit kirjautua.", Snackbar.LENGTH_LONG).show();
+            new Handler().postDelayed(new Runnable() {
+              @Override
+              public void run() {
+                finish();
               }
-
-            } catch (JSONException e) {
-              e.printStackTrace();
-            }
+            }, Snackbar.LENGTH_LONG);
+          } else {
+            Snackbar.make(bRegister, "Tämä sähköposti on jo käytössä ", Snackbar.LENGTH_LONG).show();
           }
-        };
-
-        RegisterRequest registerRequest = new RegisterRequest(name, username, password, age, dogname, rotu, responseListener);
-        RequestQueue queue = Volley.newRequestQueue(Register.this);
-        queue.add(registerRequest);
-      }
-    });
-
-    TextView tvManualLink = findViewById(R.id.tvManualLink);
-    TextView tvTrainerInfoLink = findViewById(R.id.tvTrainerInfoLink);
-    TextView tvLogin = findViewById(R.id.tvLogin);
-
-    tvManualLink.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View v) {
-
-        Intent intManual = new Intent(Register.this, Kayttoehdot.class);
-        startActivity(intManual);
-      }
-    });
-
-    tvTrainerInfoLink.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View v) {
-        Intent intInfo = new Intent(Register.this, TrainerInfo.class);
-        startActivity(intInfo);
-      }
-    });
-
-    tvLogin.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View view) {
-        Intent intLogin = new Intent(Register.this, Login.class);
-        startActivity(intLogin);
+        }
       }
     });
   }
+
+  private void initViews() {
+
+    etName = (EditText) findViewById(R.id.etName);
+    etUsername = (EditText) findViewById(R.id.etUsername);
+    etPassword = (EditText) findViewById(R.id.etPassword);
+    etAge = (EditText) findViewById(R.id.etAge);
+    etDogName = (EditText) findViewById(R.id.etDogName);
+    etRotu = (EditText) findViewById(R.id.etRotu);
+    bRegister = (Button) findViewById(R.id.bRegister);
+  }
+
+  public boolean validate() {
+    boolean valid = false;
+
+    String name = etName.getText().toString();
+    int age = etAge.getText().toString();
+    String email = etUsername.getText().toString();
+    String password = etPassword.getText().toString();
+    String dogName = etDogName.getText().toString();
+    String rotu = etRotu.getText().toString();
+  }
 }
+}
+
+  TextView tvManualLink = findViewById(R.id.tvManualLink);
+  TextView tvTrainerInfoLink = findViewById(R.id.tvTrainerInfoLink);
+  TextView tvLogin = findViewById(R.id.tvLogin);
+
+  tvManualLink.setOnClickListener(new View.OnClickListener() {
+@Override
+public void onClick(View v) {
+
+  Intent intManual = new Intent(Register.this, Kayttoehdot.class);
+  startActivity(intManual);
+  }
+  });
+
+  tvTrainerInfoLink.setOnClickListener(new View.OnClickListener() {
+@Override
+public void onClick(View v) {
+  Intent intInfo = new Intent(Register.this, TrainerInfo.class);
+  startActivity(intInfo);
+  }
+  });
+
+  tvLogin.setOnClickListener(new View.OnClickListener() {
+@Override
+public void onClick(View view) {
+  Intent intLogin = new Intent(Register.this, Login.class);
+  startActivity(intLogin);
+  }
+  });
+  }
+  }
