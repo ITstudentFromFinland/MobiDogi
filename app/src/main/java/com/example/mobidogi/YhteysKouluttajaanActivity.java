@@ -30,7 +30,7 @@ import static com.android.billingclient.api.BillingClient.SkuType.INAPP;
 import static com.example.mobidogi.PreferenceHelper.setSendVideo;
 
 public class YhteysKouluttajaanActivity extends AppCompatActivity implements PurchasesUpdatedListener {
-  private static final String TAG = "YhteysKouluttajaanActivity";
+  private static final String TAG = "YhteysKouluttajaan";
 
   static final String ITEM_SKU_LAHETYS = "mobidogi.videonlahetys";
 

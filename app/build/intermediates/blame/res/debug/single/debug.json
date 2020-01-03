@@ -1136,16 +1136,16 @@
         "source": "C:\\Users\\Leena\\.gradle\\caches\\transforms-2\\files-2.1\\9d7250a774d78c6da773e4ce19c93e82\\design-28.0.0\\res\\layout\\mtrl_layout_snackbar_include.xml"
     },
     {
+        "merged": "C:\\Users\\Leena\\MobiDogi\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_kayttoehdot.xml.flat",
+        "source": "C:\\Users\\Leena\\MobiDogi\\app\\src\\main\\res\\layout\\activity_kayttoehdot.xml"
+    },
+    {
         "merged": "C:\\Users\\Leena\\MobiDogi\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_dashboard_black_24dp.xml.flat",
         "source": "C:\\Users\\Leena\\MobiDogi\\app\\src\\main\\res\\drawable\\ic_dashboard_black_24dp.xml"
     },
     {
         "merged": "C:\\Users\\Leena\\MobiDogi\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_header.xml.flat",
         "source": "C:\\Users\\Leena\\.gradle\\caches\\transforms-2\\files-2.1\\9d7250a774d78c6da773e4ce19c93e82\\design-28.0.0\\res\\layout\\design_navigation_item_header.xml"
-    },
-    {
-        "merged": "C:\\Users\\Leena\\MobiDogi\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_kayttoehdot.xml.flat",
-        "source": "C:\\Users\\Leena\\MobiDogi\\app\\src\\main\\res\\layout\\activity_kayttoehdot.xml"
     },
     {
         "merged": "C:\\Users\\Leena\\MobiDogi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -1386,6 +1386,10 @@
     {
         "merged": "C:\\Users\\Leena\\MobiDogi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Leena\\.gradle\\caches\\transforms-2\\files-2.1\\7f5f0b3369d8fa8a72a20e2278ec0acc\\appcompat-v7-28.0.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Leena\\MobiDogi\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_toolbar.xml.flat",
+        "source": "C:\\Users\\Leena\\.gradle\\caches\\transforms-2\\files-2.1\\7f5f0b3369d8fa8a72a20e2278ec0acc\\appcompat-v7-28.0.0\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
         "merged": "C:\\Users\\Leena\\MobiDogi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_design_ic_visibility.png.flat",
@@ -1760,12 +1764,12 @@
         "source": "C:\\Users\\Leena\\.gradle\\caches\\transforms-2\\files-2.1\\7f5f0b3369d8fa8a72a20e2278ec0acc\\appcompat-v7-28.0.0\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\Leena\\MobiDogi\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_bottom_nav_item_tint.xml.flat",
-        "source": "C:\\Users\\Leena\\.gradle\\caches\\transforms-2\\files-2.1\\9d7250a774d78c6da773e4ce19c93e82\\design-28.0.0\\res\\color\\mtrl_bottom_nav_item_tint.xml"
-    },
-    {
         "merged": "C:\\Users\\Leena\\MobiDogi\\app\\build\\intermediates\\res\\merged\\debug\\drawable_add.png.flat",
         "source": "C:\\Users\\Leena\\MobiDogi\\app\\src\\main\\res\\drawable\\add.png"
+    },
+    {
+        "merged": "C:\\Users\\Leena\\MobiDogi\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_bottom_nav_item_tint.xml.flat",
+        "source": "C:\\Users\\Leena\\.gradle\\caches\\transforms-2\\files-2.1\\9d7250a774d78c6da773e4ce19c93e82\\design-28.0.0\\res\\color\\mtrl_bottom_nav_item_tint.xml"
     },
     {
         "merged": "C:\\Users\\Leena\\MobiDogi\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_bottom_nav_colored_item_tint.xml.flat",

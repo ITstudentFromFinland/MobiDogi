@@ -20,10 +20,10 @@ public class DBHelper extends SQLiteOpenHelper {
   }
   @Override
   public void onCreate(SQLiteDatabase db) {
-      String CREATE_TRAINING_TABLE = "CREATE TABLE " +
+    String CREATE_TRAINING_TABLE = "CREATE TABLE " +
 
-        TABLE_NAME + "(" + COLUMN_DATE + " INTEGER PRIMARY KEY," + COLUMN_DESCRIPTION + " TEXT " + ")";
-        db.execSQL(CREATE_TRAINING_TABLE);
+      TABLE_NAME + "(" + COLUMN_DATE + " INTEGER PRIMARY KEY," + COLUMN_DESCRIPTION + " TEXT " + ")";
+    db.execSQL(CREATE_TRAINING_TABLE);
   }
   @Override
   public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -51,6 +51,6 @@ public class DBHelper extends SQLiteOpenHelper {
     SQLiteDatabase db = this.getWritableDatabase();
     db.insert(TABLE_NAME, null, values);
     db.close();
-    }
   }
+}
 

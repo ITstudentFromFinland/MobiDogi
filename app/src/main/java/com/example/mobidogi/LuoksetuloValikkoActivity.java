@@ -22,27 +22,27 @@ public class LuoksetuloValikkoActivity extends AppCompatActivity {
     mTextMessage = findViewById(R.id.message);
     navView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
 
-      @Override
-      public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
-          case R.id.navigation_home:
-            Intent e = new Intent(LuoksetuloValikkoActivity.this, MainActivity.class);
-            startActivity(e);
-            break;
+                                                  @Override
+                                                  public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                                                    switch (item.getItemId()) {
+                                                      case R.id.navigation_home:
+                                                        Intent e = new Intent(LuoksetuloValikkoActivity.this, MainActivity.class);
+                                                        startActivity(e);
+                                                        break;
 
-            case R.id.navigation_dashboard:
-              Intent y = new Intent(LuoksetuloValikkoActivity.this, YhteysKouluttajaanActivity.class);
-              startActivity(y);
-              break;
+                                                      case R.id.navigation_dashboard:
+                                                        Intent y = new Intent(LuoksetuloValikkoActivity.this, YhteysKouluttajaanActivity.class);
+                                                        startActivity(y);
+                                                        break;
 
-              case R.id.navigation_notifications:
-                Intent tp = new Intent(LuoksetuloValikkoActivity.this, Treenipaivakirja.class);
-                startActivity(tp);
-                break;
-        }
-        return false;
-      }
-    }
+                                                      case R.id.navigation_notifications:
+                                                        Intent tp = new Intent(LuoksetuloValikkoActivity.this, Treenipaivakirja.class);
+                                                        startActivity(tp);
+                                                        break;
+                                                    }
+                                                    return false;
+                                                  }
+                                                }
     );
 
     Button LuentoLuoksetulo= findViewById(R.id.simpleImageViewLuoksetuloLuento);

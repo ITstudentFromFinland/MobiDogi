@@ -1,4 +1,4 @@
-com.example.mobidogi
+com.mobidogisovellus.mobidogi
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -1566,8 +1566,6 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_sign_in_short
-string add_event
-string add_training_event
 string age
 string aloita_kuvaus
 string already_registered
@@ -1580,7 +1578,6 @@ string character_counter_pattern
 string dog_age
 string dog_name
 string ehdollistaminen_ohje
-string enter_training_event
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
@@ -1611,18 +1608,14 @@ string rauhoittuminen_ohje
 string register
 string rotu
 string search_menu_title
-string show_event
 string status_bar_notification_info_overflow
-string submit_training_event
 string tarkista_kuvaus
 string title_activity_ehdollistaminen_ohje_pdf
 string title_activity_hihnan_kirous
 string title_activity_login
 string title_activity_luoksetulo_valikko
 string title_activity_second
-string title_activity_test
 string title_activity_third
-string title_activity_view
 string title_aktivointivinkkeja
 string title_alustallemeno
 string title_dashboard
@@ -1655,8 +1648,6 @@ string title_yhteyskouluttajaan
 string title_yksinolo
 string title_yksinolonkoulutus
 string trainer_info
-string training_events
-string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

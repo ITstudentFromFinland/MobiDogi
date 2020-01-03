@@ -12,10 +12,10 @@ android {
   compileSdkVersion 28
     defaultConfig {
         applicationId "com.mobidogisovellus.mobidogi"
-        minSdkVersion 26
+        minSdkVersion 23
         targetSdkVersion 28
-        versionCode 5
-        versionName "5.0"
+        versionCode 7
+        versionName "7.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
       signingConfig signingConfigs.release

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:1-91:12
-INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:1-91:12
-INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:1-91:12
-INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:1-91:12
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:1-89:12
+INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:1-89:12
+INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:1-89:12
+INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:1-89:12
 MERGED from [android.arch.navigation:navigation-ui:1.0.0] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\174ba63f4c3ed7afb3585a8911db3228\navigation-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\9d7250a774d78c6da773e4ce19c93e82\design-28.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\7f5f0b3369d8fa8a72a20e2278ec0acc\appcompat-v7-28.0.0\AndroidManifest.xml:17:1-22:12
@@ -46,22 +46,22 @@ MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Leena\.g
 MERGED from [com.android.support:print:28.0.0] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\441dd746fc5507909e127eaa50801847\print-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\9f66af0770fd83464340388aae824c93\interpolator-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.volley:volley:1.1.0] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\f1cb3fec07fc99bcb7ed117f9ae4bdf3\volley-1.1.0\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:1-91:12
-INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:1-91:12
-INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:1-89:12
+INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:1-89:12
+INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:1-89:12
 	package
 		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:4:3-33
 		INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:1-91:12
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:1-89:12
 		INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml
 	xmlns:dist
 		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:3:3-59
 	android:versionCode
 		INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:1-91:12
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:1-89:12
 		INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:2:11-69
@@ -107,28 +107,20 @@ MERGED from [com.android.billingclient:billing:1.1] C:\Users\Leena\.gradle\cache
 MERGED from [com.android.billingclient:billing:1.1] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\8f002285f3fadb2a61240856f034d595\billing-1.1\AndroidManifest.xml:10:5-67
 	android:name
 		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:16:20-62
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:17:3-77
-	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:17:20-74
-uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:18:3-66
-	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:18:20-63
 uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:20:3-108
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:18:3-108
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:20:20-105
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:18:20-105
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:21:3-80
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:19:3-80
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:21:20-77
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:19:20-77
 dist:module
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:23:3-38
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:21:3-38
 	dist:instant
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:23:16-35
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:21:16-35
 application
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:25:3-89:17
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:23:3-87:17
 MERGED from [com.android.support:design:28.0.0] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\9d7250a774d78c6da773e4ce19c93e82\design-28.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\9d7250a774d78c6da773e4ce19c93e82\design-28.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\247f998e4bdaf38a6cc6f3ef395b6cd1\constraint-layout-1.1.3\AndroidManifest.xml:9:5-20
@@ -146,193 +138,193 @@ MERGED from [com.android.volley:volley:1.1.0] C:\Users\Leena\.gradle\caches\tran
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Leena\.gradle\caches\transforms-2\files-2.1\b73d0db3c489aeab8b531c92b0313ef9\support-compat-28.0.0\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:30:5-31
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:28:5-31
 	android:label
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:28:5-37
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:26:5-37
 	android:roundIcon
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:29:5-50
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:27:5-50
 	android:icon
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:27:5-39
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:25:5-39
 	android:allowBackup
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:26:5-31
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:24:5-31
 	android:theme
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:31:5-36
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:29:5-36
 activity#com.example.mobidogi.TrainerInfo
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:32:5-33:16
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:30:5-31:16
+	android:name
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:30:15-42
+activity#com.example.mobidogi.Kayttoehdot
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:32:5-45
 	android:name
 		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:32:15-42
-activity#com.example.mobidogi.Kayttoehdot
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:34:5-45
-	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:34:15-42
 activity#com.example.mobidogi.Register
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:35:5-42:16
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:33:5-40:16
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:35:15-39
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:33:15-39
 intent-filter#action:name:android.intent.action.MAIN+action:name:android.intent.action.VIEW+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:36:5-41:21
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:34:5-39:21
 action#android.intent.action.MAIN
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:37:7-59
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:35:7-59
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:37:15-56
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:35:15-56
 action#android.intent.action.VIEW
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:38:7-59
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:36:7-59
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:38:15-56
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:36:15-56
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:40:7-67
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:38:7-67
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:40:17-64
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:38:17-64
 activity#com.example.mobidogi.Login
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:43:5-44:16
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:41:5-42:16
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:43:15-36
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:41:15-36
 activity#com.example.mobidogi.YksinolonkoulutusPDF
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:45:5-54
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:43:5-54
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:45:15-51
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:43:15-51
 activity#com.example.mobidogi.YksinoloLuentoPDF
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:46:5-51
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:44:5-51
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:46:15-48
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:44:15-48
 activity#com.example.mobidogi.YksinoloValikkoActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:47:5-57
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:45:5-57
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:47:15-54
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:45:15-54
 activity#com.example.mobidogi.LenkkeilyValikkoActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:48:5-58
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:46:5-58
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:48:15-55
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:46:15-55
 activity#com.example.mobidogi.YhteysKouluttajaanActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:49:5-60
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:47:5-60
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:49:15-57
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:47:15-57
 activity#com.example.mobidogi.SecondActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:50:5-52:40
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:48:5-50:40
 	android:label
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:52:7-37
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:50:7-37
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:51:7-37
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:49:7-37
 activity#com.example.mobidogi.ThirdActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:53:5-55:40
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:51:5-53:40
 	android:label
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:55:7-37
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:53:7-37
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:54:7-36
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:52:7-36
 activity#com.example.mobidogi.Treenipaivakirja
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:56:5-50
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:54:5-50
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:56:15-47
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:54:15-47
 activity#com.example.mobidogi.PoisKouluttaminen
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:57:5-51
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:55:5-51
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:57:15-48
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:55:15-48
 activity#com.example.mobidogi.AktivointiVinkkeja
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:58:5-52
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:56:5-52
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:58:15-49
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:56:15-49
 activity#com.example.mobidogi.LuentoHairitsevakaytos
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:59:5-56
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:57:5-56
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:59:15-53
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:57:15-53
 activity#com.example.mobidogi.HairitsevaKaytosValikko
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:58:5-57
+	android:name
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:58:15-54
+activity#com.example.mobidogi.HoitotoimenpiteetOhjePDF
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:59:5-58
+	android:name
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:59:15-55
+activity#com.example.mobidogi.LuentoHoitotoimenpiteet
 ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:60:5-57
 	android:name
 		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:60:15-54
-activity#com.example.mobidogi.HoitotoimenpiteetOhjePDF
+activity#com.example.mobidogi.HoitotoimenpiteetValikko
 ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:61:5-58
 	android:name
 		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:61:15-55
-activity#com.example.mobidogi.LuentoHoitotoimenpiteet
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:62:5-57
-	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:62:15-54
-activity#com.example.mobidogi.HoitotoimenpiteetValikko
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:63:5-58
-	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:63:15-55
 activity#com.example.mobidogi.VideoPlayActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:64:5-51
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:62:5-51
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:64:15-48
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:62:15-48
 activity#com.example.mobidogi.LuoksetulonkoulutusPdfActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:65:5-64
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:63:5-64
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:65:15-61
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:63:15-61
 activity#com.example.mobidogi.LuentoLuoksetuloActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:66:5-58
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:64:5-58
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:66:15-55
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:64:15-55
 activity#com.example.mobidogi.LuoksetuloValikkoActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:67:5-69:67
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:65:5-67:67
 	android:label
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:69:7-64
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:67:7-64
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:68:7-48
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:66:7-48
 activity#com.example.mobidogi.OhittaminenActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:70:5-53
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:68:5-53
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:70:15-50
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:68:15-50
 activity#com.example.mobidogi.MotivointiActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:71:5-52
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:69:5-52
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:71:15-49
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:69:15-49
 activity#com.example.mobidogi.UloslahtorauhallisestiActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:72:5-64
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:70:5-64
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:72:15-61
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:70:15-61
 activity#com.example.mobidogi.KaupunkikavelyActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:73:5-56
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:71:5-56
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:73:15-53
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:71:15-53
 activity#com.example.mobidogi.KauniistikavelyActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:74:5-57
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:72:5-57
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:74:15-54
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:72:15-54
 activity#com.example.mobidogi.ValineetActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:75:5-50
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:73:5-50
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:75:15-47
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:73:15-47
 activity#com.example.mobidogi.LahellapysyminenActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:76:5-58
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:74:5-58
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:76:15-55
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:74:15-55
 activity#com.example.mobidogi.RauhoittuminenActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:77:5-56
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:75:5-56
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:77:15-53
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:75:15-53
 activity#com.example.mobidogi.OmistajastapoisActivity
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:76:5-57
+	android:name
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:76:15-54
+activity#com.example.mobidogi.KohdentaminenActivity
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:77:5-55
+	android:name
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:77:15-52
+activity#com.example.mobidogi.EhdollistaminenActivity
 ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:78:5-57
 	android:name
 		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:78:15-54
-activity#com.example.mobidogi.KohdentaminenActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:79:5-55
-	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:79:15-52
-activity#com.example.mobidogi.EhdollistaminenActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:80:5-57
-	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:80:15-54
 activity#com.example.mobidogi.KontaktiActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:81:5-50
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:79:5-50
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:81:15-47
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:79:15-47
 activity#com.example.mobidogi.HihnanKirousActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:82:5-84:62
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:80:5-82:62
 	android:label
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:84:7-59
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:82:7-59
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:83:7-43
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:81:7-43
 activity#com.example.mobidogi.LuentoOppiminenActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:85:5-57
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:83:5-57
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:85:15-54
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:83:15-54
 activity#com.example.mobidogi.MainActivity
-ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:86:5-88:37
+ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:84:5-86:37
 	android:label
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:88:7-35
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:86:7-35
 	android:name
-		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:87:7-35
+		ADDED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml:85:7-35
 uses-sdk
 INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Leena\MobiDogi\app\src\main\AndroidManifest.xml
