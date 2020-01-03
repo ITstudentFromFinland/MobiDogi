@@ -1201,11 +1201,7 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
-id etAge
-id etDogName
-id etName
 id etPassword
-id etRotu
 id etUsername
 id eventDate
 id eventDescription

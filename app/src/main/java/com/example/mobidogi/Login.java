@@ -36,10 +36,10 @@ public class Login extends AppCompatActivity {
 
         if (validate()) {
 
-          String Sahkoposti = etUsername.getText().toString();
-          String Salasana = etPassword.getText().toString();
+          String Email = etUsername.getText().toString();
+          String Password = etPassword.getText().toString();
 
-          User currentUser = usersDbHelper.Authenticate(new User(null, null, Sahkoposti, Salasana));
+          User currentUser = usersDbHelper.Authenticate(new User(null, Email, Password));
 
           if (currentUser != null) {
             Snackbar.make(bLogin, "Kirjautuminen onnistui", Snackbar.LENGTH_LONG).show();
@@ -101,7 +101,7 @@ public class Login extends AppCompatActivity {
     String Email = etUsername.getText().toString();
     String Password = etPassword.getText().toString();
 
-    if (!Patterns.EMAIL_ADDRESS.matcher(Email).matches()) {
+    if (!android.util.Patterns.EMAIL_ADDRESS.matcher(Email).matches()) {
       valid = false;
       Snackbar.make(bLogin, "Anna oikea sähköposti", Snackbar.LENGTH_SHORT).show();
     } else {

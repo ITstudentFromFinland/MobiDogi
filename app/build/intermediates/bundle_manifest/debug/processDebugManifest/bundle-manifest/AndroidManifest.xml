@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.mobidogisovellus.mobidogi"
-    android:versionCode="7"
-    android:versionName="7.0" >
+    android:versionCode="9"
+    android:versionName="9.0" >
 
     <uses-sdk
         android:minSdkVersion="23"
@@ -34,6 +34,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.mobidogi.TrainerInfo" >
         </activity>

@@ -2,8 +2,8 @@ package com.example.mobidogi;
 
 import android.content.Intent;
 import android.os.Handler;
+import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -19,13 +19,13 @@ public class Register extends AppCompatActivity {
 
   Button bRegister;
 
-  UsersDBHelper usersDbHelper;
+  UsersDBHelper sqliteHelper;
 
   @Override
-  protected void onCreate(Bundle savedInstanceState) {
+  protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_register);
-    usersDbHelper = new UsersDBHelper(this);
+    sqliteHelper = new UsersDBHelper(this);
     initViews();
 
     TextView tvManualLink = findViewById(R.id.tvManualLink);
@@ -58,18 +58,18 @@ public class Register extends AppCompatActivity {
       }
     });
 
+    
     bRegister.setOnClickListener(new View.OnClickListener() {
-
       @Override
       public void onClick(View view) {
         if (validate()) {
-          String username = etUsername.getText().toString();
-          String password = etPassword.getText().toString();
+          String Email = etUsername.getText().toString();
+          String Password = etPassword.getText().toString();
 
-          if (!usersDbHelper.isEmailExists(username)) {
+          if (sqliteHelper.isEmailExists(Email)) {
 
-            usersDbHelper.addUser(new User(null, null, username, password));
-            Snackbar.make(bRegister, "Tunnukset luotu onnistuneesti. Voit kirjautua.", Snackbar.LENGTH_LONG).show();
+            sqliteHelper.addUser(new User(null, Email, Password));
+            Snackbar.make(bRegister, "Tunnukset luotu. Voit kirjautua sisään", Snackbar.LENGTH_LONG).show();
             new Handler().postDelayed(new Runnable() {
               @Override
               public void run() {
@@ -77,7 +77,7 @@ public class Register extends AppCompatActivity {
               }
             }, Snackbar.LENGTH_LONG);
           } else {
-            Snackbar.make(bRegister, "Tämä sähköposti on jo käytössä ", Snackbar.LENGTH_LONG).show();
+            Snackbar.make(bRegister, "Sähköposti on jo käytössä", Snackbar.LENGTH_SHORT).show();
           }
         }
       }
@@ -97,7 +97,7 @@ public class Register extends AppCompatActivity {
     String email = etUsername.getText().toString();
     String password = etPassword.getText().toString();
 
-    if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+    if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
       valid = false;
       Snackbar.make(bRegister, "Anna pätevä salasana", Snackbar.LENGTH_SHORT).show();
     } else {
@@ -111,10 +111,11 @@ public class Register extends AppCompatActivity {
     } else {
       if (password.length() > 5) {
         valid = true;
-        Snackbar.make(bRegister, "null", Snackbar.LENGTH_INDEFINITE);
+        Snackbar.make(bRegister, "Salasana on liian lyhyt", Snackbar.LENGTH_SHORT);
       } else {
         valid = false;
-        Snackbar.make(bRegister, "Salasana on liian lyhyt", Snackbar.LENGTH_SHORT);
+        Snackbar.make(bRegister, "null", Snackbar.LENGTH_INDEFINITE);
+
       }
     }
 

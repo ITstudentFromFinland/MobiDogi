@@ -14,8 +14,8 @@ android {
         applicationId "com.mobidogisovellus.mobidogi"
         minSdkVersion 23
         targetSdkVersion 28
-        versionCode 7
-        versionName "7.0"
+        versionCode 9
+        versionName "9.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
       signingConfig signingConfigs.release
