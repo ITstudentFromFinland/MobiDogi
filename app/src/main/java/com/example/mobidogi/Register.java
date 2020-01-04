@@ -79,7 +79,10 @@ public class Register extends AppCompatActivity {
             new Handler().postDelayed(new Runnable() {
               @Override
               public void run() {
-                finish();
+                validate();
+
+                Intent intent = new Intent(Register.this, Login.class);
+                startActivity(intent);
               }
             }, Snackbar.LENGTH_LONG);
           }else {
