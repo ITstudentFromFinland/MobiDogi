@@ -9,7 +9,5 @@ public class User {
     this.id = id;
     this.email = email;
     this.password = password;
-
   }
-
 }

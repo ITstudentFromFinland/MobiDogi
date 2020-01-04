@@ -24,13 +24,8 @@
   <string name="title_luoksetulonkoulutus">Luoksetulon koulutus</string>
 
   <string name="title_activity_login">Kirjaudu</string>
-  <string name="name">Oma nimi</string>
-  <string name="age">Ikä</string>
-  <string name="dog_name">Koiran nimi</string>
-  <string name="rotu">Rotu</string>
-  <string name="dog_age">Ikä</string>
-  <string name="prompt_email">Sähköposti</string>
-  <string name="prompt_password">Salasana</string>
+  <string name="email">Sähköposti</string>
+  <string name="password">Salasana</string>
   <string name="register">Rekisteröidy</string>
   <string name="action_sign_in_short">Kirjaudu</string>
   <string name="invalid_username">Not a valid username</string>
